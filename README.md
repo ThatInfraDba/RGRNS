@@ -27,6 +27,15 @@ requests (the "hybrid" model — scrape automatically, review before publishing)
 Every page is **fully self-contained** — the data is inlined, so you can email a file or
 open it with a double-click; no server or network needed.
 
+### Live pages
+
+Published via GitHub Pages at:
+
+- All products: **https://thatinfradba.github.io/RGRNS/all-products.html**
+- Monitor: **https://thatinfradba.github.io/RGRNS/monitor.html**
+- Flyway: **https://thatinfradba.github.io/RGRNS/flyway.html**
+- Test Data Manager: **https://thatinfradba.github.io/RGRNS/test-data-manager.html**
+
 ### Filters per page
 
 The **version filter** (select versions include/exclude, and an *upgrade path* from→to) and
@@ -124,30 +133,6 @@ Pages show a small "⚠ N entries awaiting review" banner and a `Review` badge o
 > **Hand-adding entries is fine too.** TDM's public release notes are mostly component-version
 > tables with few itemised changes, so its page is mainly a version timeline. To enrich it,
 > add entries to `data/tdm.json` by hand with `"status": "curated"`.
-
----
-
-## One-time setup (GitHub)
-
-The code already lives at **https://github.com/ThatInfraDba/RGRNS**. To finish wiring it up:
-
-1. **Settings → Pages →** Source: **GitHub Actions**.
-2. **Settings → Actions → General → Workflow permissions:** enable
-   **"Allow GitHub Actions to create and approve pull requests"** (needed for the review PRs)
-   and select **Read and write permissions**.
-3. **Actions tab → Build & deploy pages → Run workflow** for the first publish (later it runs
-   automatically whenever curated data lands on `main`). The scrape workflows run daily on a
-   schedule and can also be triggered manually from the **Actions** tab.
-4. Once published, the pages are live at:
-   - All products: **https://thatinfradba.github.io/RGRNS/all-products.html**
-   - Monitor: `https://thatinfradba.github.io/RGRNS/monitor.html`
-   - Flyway: `https://thatinfradba.github.io/RGRNS/flyway.html`
-   - Test Data Manager: `https://thatinfradba.github.io/RGRNS/test-data-manager.html`
-
-To clone and work locally:
-```bash
-git clone https://github.com/ThatInfraDba/RGRNS.git
-```
 
 ---
 
