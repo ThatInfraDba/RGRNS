@@ -1,0 +1,12 @@
+name: Scrape Redgate Monitor
+
+on:
+  schedule:
+    - cron: "20 6 * * *" # daily 06:20 UTC
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    uses: ./.github/workflows/_scrape.yml
+    with:
+      product: monitor

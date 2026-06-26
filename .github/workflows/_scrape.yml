@@ -1,0 +1,63 @@
+name: _scrape (reusable)
+
+# Reusable scrape job. Each product workflow (scrape-monitor / scrape-flyway /
+# scrape-tdm) calls this with its product key. When the scrape finds new content,
+# a pull request is opened so the new entries can be reviewed/curated before they
+# go live (the "hybrid" model).
+
+on:
+  workflow_call:
+    inputs:
+      product:
+        description: "Product key (monitor | flyway | tdm)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scrape ${{ inputs.product }}
+        id: scrape
+        run: node scripts/scrape.js ${{ inputs.product }}
+
+      - name: Open / update review pull request
+        if: steps.scrape.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: data/${{ inputs.product }}.json
+          branch: auto/scrape-${{ inputs.product }}
+          base: main
+          delete-branch: true
+          commit-message: "chore(${{ inputs.product }}): sync release-notes entries"
+          title: "📝 Review: ${{ steps.scrape.outputs.added }} new ${{ inputs.product }} release-notes entr(y/ies)"
+          labels: |
+            release-notes
+            needs-review
+          body: |
+            The daily scraper picked up changes from the **${{ inputs.product }}** release notes.
+
+            - **New entries flagged for review:** ${{ steps.scrape.outputs.added }}
+            - **Total awaiting review:** ${{ steps.scrape.outputs.needs_review }}
+
+            ### Curation checklist
+            For each entry with `"status": "needs-review"` in `data/${{ inputs.product }}.json`:
+            - [ ] Confirm it is genuinely a feature/change worth listing (delete noise)
+            - [ ] Tidy the `text` wording if needed
+            - [ ] Fill product-specific tags (Monitor: `platforms`/`edition`; Flyway: `edition` tier; TDM: `components`)
+            - [ ] Change `"status"` to `"curated"`
+
+            Merging this PR triggers a rebuild and redeploy of the published pages.

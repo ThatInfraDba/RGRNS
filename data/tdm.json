@@ -1,0 +1,165 @@
+{
+  "product": "tdm",
+  "productName": "Redgate Test Data Manager",
+  "source": "https://documentation.red-gate.com/testdatamanager/release-notes",
+  "generated": "2026-06-26",
+  "versions": [
+    {
+      "version": "0.44.2",
+      "date": "2026-06-25",
+      "dateDisplay": "25 Jun 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.44.2-Releasedon25June2026"
+    },
+    {
+      "version": "0.43.15",
+      "date": "2026-06-06",
+      "dateDisplay": "06 Jun 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.43.15-Releasedon6June2026"
+    },
+    {
+      "version": "0.43.1",
+      "date": "2026-06-01",
+      "dateDisplay": "01 Jun 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.43.1-Releasedon1June2026"
+    },
+    {
+      "version": "0.42.72",
+      "date": "2026-05-21",
+      "dateDisplay": "21 May 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.42.72-Releasedon21May2026"
+    },
+    {
+      "version": "0.42.54",
+      "date": "2026-05-19",
+      "dateDisplay": "19 May 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.42.54-Releasedon19May2026"
+    },
+    {
+      "version": "0.42.46",
+      "date": "2026-05-13",
+      "dateDisplay": "13 May 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.42.46-Releasedon13May2026"
+    },
+    {
+      "version": "0.41.316",
+      "date": "2026-04-27",
+      "dateDisplay": "27 Apr 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.316-Releasedon27April2026"
+    },
+    {
+      "version": "0.41.313",
+      "date": "2026-04-24",
+      "dateDisplay": "24 Apr 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.313-Releasedon24April2026"
+    },
+    {
+      "version": "0.41.297",
+      "date": "2026-04-17",
+      "dateDisplay": "17 Apr 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.297-Releasedon17April2026"
+    },
+    {
+      "version": "0.41.280",
+      "date": "2026-04-14",
+      "dateDisplay": "14 Apr 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.280-Releasedon14April2026"
+    },
+    {
+      "version": "0.41.260",
+      "date": "2026-04-09",
+      "dateDisplay": "09 Apr 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.260-Releasedon9April2026"
+    },
+    {
+      "version": "0.41.183",
+      "date": "2026-03-26",
+      "dateDisplay": "26 Mar 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.183-Releasedon26March2026"
+    },
+    {
+      "version": "0.41.71",
+      "date": "2026-03-05",
+      "dateDisplay": "05 Mar 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.71-Releasedon5March2026"
+    },
+    {
+      "version": "0.41.35",
+      "date": "2026-03-03",
+      "dateDisplay": "03 Mar 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.35-Releasedon3March2026"
+    },
+    {
+      "version": "0.41.5",
+      "date": "2026-02-17",
+      "dateDisplay": "17 Feb 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.41.5-Releasedon17February2026"
+    },
+    {
+      "version": "0.40.47",
+      "date": "2026-02-04",
+      "dateDisplay": "04 Feb 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.40.47-Releasedon4February2026"
+    },
+    {
+      "version": "0.40.32",
+      "date": "2026-01-30",
+      "dateDisplay": "30 Jan 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.40.32-Releasedon30January2026"
+    },
+    {
+      "version": "0.40.20",
+      "date": "2026-01-28",
+      "dateDisplay": "28 Jan 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.40.20-Releasedon28January2026"
+    },
+    {
+      "version": "0.40.8",
+      "date": "2026-01-26",
+      "dateDisplay": "26 Jan 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.40.8-Releasedon26January2026"
+    },
+    {
+      "version": "0.40.1",
+      "date": "2026-01-08",
+      "dateDisplay": "08 Jan 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.40.1-Releasedon8January2026"
+    },
+    {
+      "version": "0.39.129",
+      "date": "2026-01-08",
+      "dateDisplay": "08 Jan 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.39.129-Releasedon8January2026"
+    },
+    {
+      "version": "0.37.27",
+      "date": "2025-12-18",
+      "dateDisplay": "18 Dec 2025",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.37.27Releasedon18December2025"
+    },
+    {
+      "version": "0.37.1",
+      "date": "2025-12-01",
+      "dateDisplay": "01 Dec 2025",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.37.1-Releasedon1December2025"
+    },
+    {
+      "version": "0.36.2",
+      "date": "2025-11-25",
+      "dateDisplay": "25 Nov 2025",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.36.2-Releasedon25November2025"
+    }
+  ],
+  "entries": [
+    {
+      "id": "0.37.27::fixed-an-issue-causing-upgrades-to-break-if-previously-insta",
+      "version": "0.37.27",
+      "date": "2025-12-18",
+      "dateDisplay": "18 Dec 2025",
+      "category": "fix",
+      "text": "Fixed an issue causing upgrades to break if previously installed in a non-default location.",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.37.27Releasedon18December2025",
+      "status": "needs-review",
+      "components": []
+    }
+  ]
+}

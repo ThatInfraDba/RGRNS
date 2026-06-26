@@ -1,0 +1,21 @@
+{
+  "name": "rg-rns",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Redgate release-notes feature tracker: daily scrape of product release notes into curated JSON, plus self-contained HTML overviews.",
+  "type": "commonjs",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "scrape:monitor": "node scripts/scrape.js monitor",
+    "scrape:flyway": "node scripts/scrape.js flyway",
+    "scrape:tdm": "node scripts/scrape.js tdm",
+    "seed:monitor": "node scripts/seed-monitor.js",
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

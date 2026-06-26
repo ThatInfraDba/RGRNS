@@ -1,0 +1,12 @@
+name: Scrape Redgate Flyway
+
+on:
+  schedule:
+    - cron: "30 6 * * *" # daily 06:30 UTC
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    uses: ./.github/workflows/_scrape.yml
+    with:
+      product: flyway
