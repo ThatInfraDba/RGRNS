@@ -2,8 +2,20 @@
   "product": "tdm",
   "productName": "Redgate Test Data Manager",
   "source": "https://documentation.red-gate.com/testdatamanager/release-notes",
-  "generated": "2026-06-26",
+  "generated": "2026-08-13",
   "versions": [
+    {
+      "version": "0.44.54",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.44.54-Releasedon20July2026"
+    },
+    {
+      "version": "0.44.44",
+      "date": "2026-07-08",
+      "dateDisplay": "08 Jul 2026",
+      "link": "https://documentation.red-gate.com/testdatamanager/release-notes#Releasenotes-0.44.44-Releasedon8July2026"
+    },
     {
       "version": "0.44.2",
       "date": "2026-06-25",
