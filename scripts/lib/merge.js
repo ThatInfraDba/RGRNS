@@ -88,7 +88,7 @@ function mergeProduct(existing, scraped, product, generatedDate) {
       category: raw.category,
       text: raw.text,
       link: raw.link,
-      status: "needs-review",
+      status: product.autoCurate ? "curated" : "needs-review",
       ...blankFacetFields(product, raw.text),
     });
     added++;

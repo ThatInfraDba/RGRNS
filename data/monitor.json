@@ -836,9 +836,11 @@
       "category": "feature",
       "text": "MCP server (preview) is now available. See https://www.red-gate.com/monitor14/mcp-server for details.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.28.0-August5,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
+      "edition": "preview"
     },
     {
       "id": "14.28.0::redgate-assistant-rga-preview-is-now-available-see-https-www",
@@ -848,9 +850,11 @@
       "category": "feature",
       "text": "Redgate Assistant (RGA) (preview) is now available. See https://www.red-gate.com/monitor14/redgate-assistant for details.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.28.0-August5,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
+      "edition": "preview"
     },
     {
       "id": "14.27.0::a-new-reports-experience-is-now-available-providing-a-more-m",
@@ -860,8 +864,10 @@
       "category": "feature",
       "text": "A new Reports experience is now available, providing a more modern interface and improved layout. Click on the Try it out link on the Reports tab.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.27.0-July29,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
       "edition": ""
     },
     {
@@ -872,8 +878,10 @@
       "category": "feature",
       "text": "Added a new \"Power BI Report Server status\" alert, so Power BI Report Server (the successor to SQL Server Reporting Services from SQL Server 2025) can be alerted on independently from SQL Server Reporting Service.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.27.0-July29,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
       "edition": ""
     },
     {
@@ -884,8 +892,11 @@
       "category": "feature",
       "text": "New alert type for IO stalls is now available for SQL Server and MySQL. This alert is raised when the average time an IO operation spends stalled waiting on storage exceeds a threshold for a sustained duration.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.27.0-July29,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "sqlserver",
+        "mysql"
+      ],
       "edition": ""
     },
     {
@@ -896,8 +907,11 @@
       "category": "feature",
       "text": "Individual query execution monitoring is now available for Azure SQL Database, Azure SQL Managed Instance, and Google Cloud SQL for SQL Server. See https://www.red-gate.com/monitor14/individual-query-executions for details.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.26.0-July22,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "azuresql",
+        "sqlserver"
+      ],
       "edition": ""
     },
     {
@@ -908,9 +922,11 @@
       "category": "feature",
       "text": "Enterprise edition - SQL Audit is now out of preview.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.25.0-July16,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.25.0::the-virtual-machines-page-is-now-out-of-preview",
@@ -920,8 +936,10 @@
       "category": "feature",
       "text": "The Virtual Machines page is now out of preview.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.25.0-July16,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
       "edition": ""
     },
     {
@@ -932,9 +950,11 @@
       "category": "feature",
       "text": "Enterprise edition - New alert type for database permission changes is now available for SQL Server instances with SQL Audit enabled. This alert is raised when a permission is granted, revoked, denied, or ownership is transferred on a database or database securables.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.24.0-July10,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.24.0::google-cloud-sql-monitoring-is-now-available-for-postgresql-",
@@ -944,8 +964,10 @@
       "category": "feature",
       "text": "Google Cloud SQL monitoring is now available for PostgreSQL instances.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.24.0-July10,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
       "edition": ""
     },
     {
@@ -956,8 +978,10 @@
       "category": "feature",
       "text": "Google Cloud SQL monitoring is now available for SQL Server instances.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.23.0-July1,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
       "edition": ""
     },
     {

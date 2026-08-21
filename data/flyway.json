@@ -332,7 +332,7 @@
       "category": "change",
       "text": "Flyway now warns when `validate` resolves no migrations from the configured locations but the schema history contains applied migrations",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -343,7 +343,7 @@
       "category": "change",
       "text": "mcp server project load will no longer raise an error if a .conf project was detected in a default location outside of the project root",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -354,7 +354,7 @@
       "category": "change",
       "text": "OSS no longer recognises the 'publishResult' or 'checkDriftOnMigrate' parameters which had no effect",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -365,7 +365,7 @@
       "category": "feature",
       "text": "`deploy` command result now includes execution time in milliseconds",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.1.0(2026-07-23)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -376,7 +376,7 @@
       "category": "feature",
       "text": "environments_<name>_<setting> and flyway_<setting> environment variables can now use any letter casing in their prefix, e.g. ENVIRONMENTS_PRODUCTION_PASSWORD",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.1.0(2026-07-23)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -387,7 +387,7 @@
       "category": "feature",
       "text": "Add support for new 'IncludeOnlineIndexCreation' option for Oracle",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -398,7 +398,7 @@
       "category": "feature",
       "text": "check drift and check changes JSON output now includes an `id` for each difference, allowing drift to be resolved against specific objects",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -409,7 +409,7 @@
       "category": "feature",
       "text": "Flyway MCP server now available, exposing development-time tools an AI agent can call. These tools run flyway commands for both state based and migrations projects",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -420,7 +420,7 @@
       "category": "change",
       "text": "Include the offending SQL in error messages for Flyway Desktop when debug logging is disabled",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -431,7 +431,7 @@
       "category": "change",
       "text": "the `docker` provisioner now reports a dedicated error code when a SQL Server or Oracle container is provisioned without accepting the database vendor's EULA",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -442,7 +442,7 @@
       "category": "change",
       "text": "-h help for migrate, info, validate, clean, and undo now lists relevant configuration parameters and a usage example instead of just a description",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -453,7 +453,7 @@
       "category": "change",
       "text": "`testConnection` now keeps the configured environments available so provisioners that reference another environment (for example the docker provisioner's `sourceEnvironment`) resolve correctly when testing an inline environment",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -464,7 +464,7 @@
       "category": "feature",
       "text": "Add support for new 'disable-constraints-for-static-data' option for PostgreSQL",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -475,7 +475,7 @@
       "category": "change",
       "text": "Oracle SQL error output no longer shows the redundant SQL State and Error Code lines, as the ORA-#### code is already in the message",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -486,7 +486,7 @@
       "category": "change",
       "text": "testConnection now reports provisioning progress (e.g. Docker container start-up) when progress output is enabled",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -497,7 +497,7 @@
       "category": "change",
       "text": "the `docker` provisioner now reports clear, dedicated errors when the Docker CLI is not installed or the Docker daemon is not running",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -508,7 +508,7 @@
       "category": "change",
       "text": "the legacy compose-file configuration of the preview `docker` provisioner is deprecated and now logs a warning; use the `docker-compose` provisioner instead",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -519,7 +519,7 @@
       "category": "change",
       "text": "using 'auth' without the '-IAgreeToTheEula' flag defaults to an interactive EULA agreement process",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -530,7 +530,7 @@
       "category": "change",
       "text": "filesystem location 'not found' messages now report the effective working directory and prompt you to check it, since running Flyway from the wrong working directory (without -workingDirectory) is a common cause",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -541,7 +541,7 @@
       "category": "change",
       "text": "Native Connectors mode is now enabled by default for Cassandra",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -552,7 +552,7 @@
       "category": "change",
       "text": "outOfOrder mode is now reported at info level instead of as a warning",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -563,7 +563,7 @@
       "category": "feature",
       "text": "smart docker provisioner keepAlive reuses the build database container across Flyway commands",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -574,7 +574,7 @@
       "category": "change",
       "text": "The preview `docker` environment provisioner has been renamed to `docker-compose`. Existing `docker` provisioner configurations that use a compose file continue to work via automatic forwarding.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -585,7 +585,7 @@
       "category": "feature",
       "text": "Added a check.driftResolutionFolder setting to configure the folder in which drift resolution scripts are generated when drift is detected",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.9.0(2026-06-18)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -596,7 +596,7 @@
       "category": "change",
       "text": "check drift, changes and dryrun commands now report phase-level progress when outputProgress is enabled",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.9.0(2026-06-18)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -607,7 +607,7 @@
       "category": "feature",
       "text": "Flyway CLI now exits with a distinct exit code derived from the error code when a FlywayException is thrown",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.9.0(2026-06-18)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -618,7 +618,7 @@
       "category": "change",
       "text": "Flyway now warns when an offline permit is due to expire within the next 30 days",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.8.0(2026-06-04)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -629,7 +629,7 @@
       "category": "change",
       "text": "Improved progress reporting for PostgreSQL, MySQL and SQLite",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.8.0(2026-06-04)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -640,7 +640,7 @@
       "category": "feature",
       "text": "Flyway can load custom SQLFluff rules for use in the Check command",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.7.0(2026-05-29)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -651,7 +651,7 @@
       "category": "feature",
       "text": "Environment Variable resolver syntax now works in all flyway configuration parameters, not just environment connection properties",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.2(2026-05-21)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -662,7 +662,7 @@
       "category": "change",
       "text": "`Auth` command now defers to existing license providers instead of redundantly re-authenticating. License output now reports the acquisition method.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.0(2026-05-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -673,7 +673,7 @@
       "category": "change",
       "text": "configuration errors caused solely by obsolete parameters now throw ObsoleteConfigurationParametersException, exposing the obsolete parameters as structured data",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.0(2026-05-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -684,7 +684,7 @@
       "category": "feature",
       "text": "Flyway now supports Native Connectors mode for the Deploy command",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.0(2026-05-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -695,7 +695,7 @@
       "category": "change",
       "text": "Issue 4229 Gradle plugin is now compatible with Gradle's configuration cache for environment variable and system property inputs",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.0(2026-05-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -706,7 +706,7 @@
       "category": "change",
       "text": "obsolete parameter exception payload now includes a `reason` field explaining why each parameter is obsolete",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.0(2026-05-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -717,7 +717,7 @@
       "category": "change",
       "text": "simplified namespace short-circuiting (aka scoped namespacing) so that mixing scoped and unscoped namespaces is allowed",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.6.0(2026-05-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -728,7 +728,7 @@
       "category": "change",
       "text": "\"initSql\" has been deprecated. Please use the \"afterConnect\" callback instead",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.5.0(2026-04-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -739,7 +739,7 @@
       "category": "change",
       "text": "`flyway prepare` with `-prepare.source=schemaModel` now fails with a clear error when the configured schema model directory does not exist",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.5.0(2026-04-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -750,7 +750,7 @@
       "category": "feature",
       "text": "Flyway now supports Azure Key Vault as a secrets resolver",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.5.0(2026-04-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -761,7 +761,7 @@
       "category": "feature",
       "text": "Flyway now supports Native Connectors mode for Cassandra. The JDBC-based approach has been deprecated",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.5.0(2026-04-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -772,7 +772,7 @@
       "category": "change",
       "text": "The Flyway Secret Manager feature is no longer available under Teams license",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.5.0(2026-04-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -783,7 +783,7 @@
       "category": "feature",
       "text": "Add a \"checksumIncludeReferencedScripts\" parameter under \"Oracle\" namespace to control whether referenced scripts are included in checksum calculation",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.4.0(2026-04-14)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -794,7 +794,7 @@
       "category": "feature",
       "text": "Added a new rule: RG23 - Configurable forbidden alias names",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.4.0(2026-04-14)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -805,7 +805,7 @@
       "category": "feature",
       "text": "Added a new rule: RG22 - Ensure the same table is not created and then dropped or vice versa in the same script",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.3.0(2026-03-31)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -816,7 +816,7 @@
       "category": "change",
       "text": "Added additional properties to json output of check code: \"engine\", \"file_pos\", \"file_pos_end\" and (optional) \"fixes\".",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.3.0(2026-03-31)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -827,7 +827,7 @@
       "category": "feature",
       "text": "Flyway includes SQLite support in Native Connectors mode",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.3.0(2026-03-31)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -838,7 +838,7 @@
       "category": "change",
       "text": "Release note generation now reads from the database, enabling sub-product notes to be included",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.3.0(2026-03-31)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -849,7 +849,7 @@
       "category": "feature",
       "text": "`check -code` now generates a SARIF 2.1.0 report file (`.sarif`) alongside JSON and HTML reports, enabling integration with GitHub Code Scanning, Azure DevOps, and other SARIF-compatible tools",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -860,7 +860,7 @@
       "category": "feature",
       "text": "Add RG21, a configurable rule that can enforce naming prefixes for multiple object types. (Table, View, Procedure, Function, Schema)",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -871,7 +871,7 @@
       "category": "feature",
       "text": "added `check.code.noqaSeverity` setting for configuring the severity of the warning about use of `--noqa` in migrations checked by SQLFluff as part of `check -code`",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -882,7 +882,7 @@
       "category": "feature",
       "text": "Added a new rule: RG19 - Simple check to ensure table names are not pluralized. More complex pluralizations should be handled by hand.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -893,7 +893,7 @@
       "category": "feature",
       "text": "Added a new rule: RG20 - Object names should be contained within square brackets.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -904,7 +904,7 @@
       "category": "feature",
       "text": "Added a new rule: RG21 - This is a configurable rule that can enforce naming prefixes for multiple object types. (Table, View, Procedure, Function, Schema)",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -915,7 +915,7 @@
       "category": "change",
       "text": "Code Analysis renamed to Code Review in output from check command",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -926,7 +926,7 @@
       "category": "change",
       "text": "the regex rule engine used by check -code will no longer automatically convert line endings before applying rules for the contents of migrations",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -937,7 +937,7 @@
       "category": "change",
       "text": "Implement non statement level callbacks in Native Connectors for undo, info, baseline and repair",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.1.1(2026-03-17)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -948,7 +948,7 @@
       "category": "change",
       "text": "changed the snapshot history limit default to 5, so that ad-hoc rollbacks are available for recent deployments by default",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.1.0(2026-03-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -959,7 +959,7 @@
       "category": "feature",
       "text": "Flyway now supports using the 'init' command to automatically update TOML configuration files for Desktop users",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.1.0(2026-03-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -970,7 +970,7 @@
       "category": "change",
       "text": "InsertRowLock now supports custom locking strategies for databases without primary key support",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.1.0(2026-03-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -981,7 +981,7 @@
       "category": "change",
       "text": "Removed SQL Server 'IgnoreSynonymDependencies' comparison option",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.1.0(2026-03-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -992,7 +992,7 @@
       "category": "feature",
       "text": "Add flag `-check.generateReport` to control whether check should write the result to a file",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.2(2026-02-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1003,7 +1003,7 @@
       "category": "change",
       "text": "flyway check now honors environment-specific cleanDisabled override when no provisioner set for the build database",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.2(2026-02-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1014,7 +1014,7 @@
       "category": "change",
       "text": "flyway check now honours environment-specific cleanDisabled override when no provisioner set for the build database",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.2(2026-02-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1025,7 +1025,7 @@
       "category": "change",
       "text": "running snapshot against an Oracle database without specifying schemas will now use the default schema if set",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.2(2026-02-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1036,7 +1036,7 @@
       "category": "change",
       "text": "Added alias for azureAdInteractive resolver to entraId",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.1(2026-02-12)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1047,7 +1047,7 @@
       "category": "feature",
       "text": "check -changes now honors target parameter for setting a target version",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.1(2026-02-12)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1058,7 +1058,7 @@
       "category": "feature",
       "text": "check -changes now honours target parameter for setting a target version",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.1(2026-02-12)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1069,7 +1069,7 @@
       "category": "change",
       "text": "Redgate Clone documentation marked as deprecated and Flyway Desktop sections removed",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.1(2026-02-12)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1080,7 +1080,7 @@
       "category": "feature",
       "text": "generated drift incorporate script will now contain object existence checks for SQL Server",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.20.1(2026-01-08)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1091,7 +1091,7 @@
       "category": "change",
       "text": "`model`, `generate`, and `prepare` commands now return full selection output instead of a list of names of included dependencies",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.20.0(2025-12-22)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1102,7 +1102,7 @@
       "category": "feature",
       "text": "It is now possible to switch off automatic dependency handling for Oracle when performing comparison operations. This is done by setting `includeDependencies = false` in the `[redgateCompare.oracle.options.behavior]` section of the config file.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.19.1(2025-12-18)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1113,7 +1113,7 @@
       "category": "change",
       "text": "LICENSES-THIRD-PARTY.txt format has changed. Will now refer to the shipped license file instead of duplicating the license text.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.19.1(2025-12-18)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1124,7 +1124,7 @@
       "category": "feature",
       "text": "'testConnection' command is now supported in Native Connectors mode",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.18.0(2025-11-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1135,7 +1135,7 @@
       "category": "change",
       "text": "When using MongoDB in 'Native Connectors' mode, Flyway now fails early during database initialization if the migration execution tool cannot connect",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.18.0(2025-11-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1146,7 +1146,7 @@
       "category": "change",
       "text": "When using Oracle in 'Native Connectors' mode, Flyway now fails early during database initialization if the migration execution tool cannot connect",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.18.0(2025-11-27)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1157,7 +1157,7 @@
       "category": "feature",
       "text": "Added ability to run code analysis on individiual scripts with 'check.scriptFilename' and new 'SCRIPT' scope",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.1(2025-11-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1168,7 +1168,7 @@
       "category": "feature",
       "text": "Comparison options can now be configured via the command-line",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.1(2025-11-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1179,7 +1179,7 @@
       "category": "feature",
       "text": "Flyway now supports reporting the usage of '--noqa' tags that suppress code analysis linting",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.1(2025-11-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1190,7 +1190,7 @@
       "category": "feature",
       "text": "Snapshot history version column will now be populated when a database is used as the source for the snapshot",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.1(2025-11-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1201,7 +1201,7 @@
       "category": "feature",
       "text": "snapshots can be written to an s3 bucket and read from an s3 bucket when performing drift checks",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.1(2025-11-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1212,7 +1212,7 @@
       "category": "feature",
       "text": "testConnection command can test Comparison Engine connections",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.1(2025-11-20)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1223,7 +1223,7 @@
       "category": "change",
       "text": "if deployed snapshot is configured but not found, drift detection will warn rather than fail, allowing for initial deployment to succeed",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.0(2025-11-11)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1234,7 +1234,7 @@
       "category": "feature",
       "text": "It is now possible to capture and store snapshots in a target database in a flyway snapshot history table following a migrate, undo, or deploy action. These snapshots can be used for drift analysis and potentially for rollback. For more information see snapshots.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.0(2025-11-11)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1245,7 +1245,7 @@
       "category": "feature",
       "text": "standard logging is now included with `outputType=json`; it is posted via STDERR",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.17.0(2025-11-11)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1256,7 +1256,7 @@
       "category": "feature",
       "text": "Added a new 'testConnection' command to test the validity of a configured database connection",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.16.0(2025-11-06)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1267,7 +1267,7 @@
       "category": "change",
       "text": "Flyway now uses the packaged SQLFluff for Enterprise users by default, unless this feature is explicitly turned off",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.16.0(2025-11-06)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1278,7 +1278,7 @@
       "category": "feature",
       "text": "Regex code analysis now reports all identified violations instead of only the first one",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.16.0(2025-11-06)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1289,7 +1289,7 @@
       "category": "feature",
       "text": "Flyway now provides clearer error messages when online authentication methods fail",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.15.0(2025-10-23)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1300,7 +1300,7 @@
       "category": "change",
       "text": "Simplified setting `debugMode` and `quietMode` in Loggers. When using Flyway via the Java API, Log level is now configured via `LogFactory.setLogLevel(LogLevel)`. All appropriate loggers will now honor the LogLevel including `quietMode` (most loggers were previously flawed and would ignore this)",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.15.0(2025-10-23)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1311,7 +1311,7 @@
       "category": "feature",
       "text": "Flyway now supports configuring Offline Permits via command-line parameters and TOML configuration",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.14.1(2025-10-15)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1322,7 +1322,7 @@
       "category": "change",
       "text": "Released first set of Redgate code analysis rules for SQLFLuff (RG01-RG08)",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.14.1(2025-10-15)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1333,7 +1333,7 @@
       "category": "feature",
       "text": "Enhanced exception handling during Code Analysis to allow Flyway to continue generating the Report if partial results are already available",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.14.0(2025-10-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1344,7 +1344,7 @@
       "category": "feature",
       "text": "Flyway now provides more comprehensive details in code analysis results",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.14.0(2025-10-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1355,7 +1355,7 @@
       "category": "feature",
       "text": "Packaged SQL Fluff added to docker images",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.14.0(2025-10-09)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1366,7 +1366,7 @@
       "category": "change",
       "text": "Issue 4119 Update shaded aws-secretsmanager-jdbc to not include io.netty to remove vulnerable dependencies",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.13.3(2025-10-07)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1377,7 +1377,7 @@
       "category": "change",
       "text": "JVM Startup time added to verbose logs",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.13.3(2025-10-07)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1388,7 +1388,7 @@
       "category": "change",
       "text": "Flyway now provides clearer error messages when attempting to load an unlicensed plugin",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.13.1(2025-09-17)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1399,7 +1399,7 @@
       "category": "feature",
       "text": "deploy command now supports errorOverrides, allowing for graceful handling of SQL Server PRINT statements",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.13.0(2025-09-16)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1410,7 +1410,7 @@
       "category": "feature",
       "text": "It is now possible to define `beforeDeploy`, `afterDeploy`, and `afterDeployError` callbacks in locations specified by the `callbackLocations` parameter. This allows logic to be executed before and after script execution for state-based deployments.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.13.0(2025-09-16)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1421,7 +1421,7 @@
       "category": "feature",
       "text": "it is now possible to specify callback-specific locations using the `callbackLocations` parameter",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.13.0(2025-09-16)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1432,7 +1432,7 @@
       "category": "change",
       "text": "'majorRules' and 'minorRules' parameters in Code Analysis are now deprecated",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.12.0(2025-09-04)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1443,7 +1443,7 @@
       "category": "feature",
       "text": "A new 'failOnError' mode has been introduced in Flyway 'check' code analysis",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.12.0(2025-09-04)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1454,7 +1454,7 @@
       "category": "feature",
       "text": "add support to generate undo script for state based model migration",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.12.0(2025-09-04)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1465,7 +1465,7 @@
       "category": "feature",
       "text": "afterConnect callback is now available outside of Native Connectors",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.11.2(2025-08-21)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1476,7 +1476,7 @@
       "category": "feature",
       "text": "Table of useful configuration options will now print if no migrations found",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.11.1(2025-08-14)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1487,7 +1487,7 @@
       "category": "change",
       "text": "When performing operations using the results of database comparison capabilities (model, generate, prepare, diffText) for SQL Server and Oracle databases, selecting static data differences will fail if the associated table does not exist in the target database and is not also included for selection",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.11.1(2025-08-14)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1498,7 +1498,7 @@
       "category": "change",
       "text": "Added full aws-secretsmanager-jdbc dependencies",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.5(2025-07-31)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1509,7 +1509,7 @@
       "category": "feature",
       "text": "New configuration option that allows a WHERE clause to be specified for comparison operations on each static data table to filter the returned rows",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.5(2025-07-31)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1520,7 +1520,7 @@
       "category": "change",
       "text": "'passOnRegexMatch' parameter in Regex Code Analysis is now deprecated",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.4(2025-07-24)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1531,7 +1531,7 @@
       "category": "feature",
       "text": "Oracle Database Flashback support for Native Connectors Oracle",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.4(2025-07-24)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1542,7 +1542,7 @@
       "category": "change",
       "text": "Code analysis reports now display both the number of files with violations and the total number of violations",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.3(2025-07-17)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1553,7 +1553,7 @@
       "category": "change",
       "text": "Issue 4089 Gradle plugin now uses Extensions API over deprecated Conventions API",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.3(2025-07-17)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1564,7 +1564,7 @@
       "category": "feature",
       "text": "A new parameter has been added to Regex Rule configuration files, allowing individual Regex Rules to be selectively disabled",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.2(2025-07-10)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1575,7 +1575,7 @@
       "category": "change",
       "text": "New SQL Server projects will now surface 'PRINT' statements as info logs instead of warnings with a default error override in the project settings",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.1(2025-07-03)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1586,7 +1586,7 @@
       "category": "feature",
       "text": "The 'help' command now provides targeted help for individual 'check' sub-commands",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.1(2025-07-03)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1597,7 +1597,7 @@
       "category": "change",
       "text": "Update terminology in docs from AAD to Microsoft Entra",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.1(2025-07-03)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1608,7 +1608,7 @@
       "category": "feature",
       "text": "Backup provisioner will no longer attempt to create users that already exist",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1619,7 +1619,7 @@
       "category": "feature",
       "text": "Flyway now supports configuring the SQL dialect for code analysis via a dedicated configuration parameter",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1630,7 +1630,7 @@
       "category": "feature",
       "text": "Flyway now supports specifying the code analysis scope for migrations",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1641,7 +1641,7 @@
       "category": "change",
       "text": "flyway prepare target parameter will now default to the value of the environment parameter if the source is schema model or migrations. This makes it more straightforward if the connection details are provided as parameters rather than as a toml environment, and makes the command neater if prepare and deploy are chained together.",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1652,7 +1652,7 @@
       "category": "change",
       "text": "Issue 4092 Gradle tasks now use lazy instantiation",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1663,7 +1663,7 @@
       "category": "feature",
       "text": "It is now possible to set `generate.usePlaceholders=true` to allow the `generate` verb to place placeholders into generated files",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     },
     {
@@ -1674,7 +1674,7 @@
       "category": "change",
       "text": "Native Connectors is now available via the API",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway11.10.0(2025-06-26)",
-      "status": "needs-review",
+      "status": "curated",
       "edition": ""
     }
   ]

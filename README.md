@@ -110,7 +110,8 @@ tier). `category` is shared.
 
 ## The review (curation) flow
 
-This is the "scrape + flag for review" model you chose:
+This is the "scrape + flag for review" model you chose — for products where a human actually
+has something to add:
 
 1. **Daily**, each product's workflow scrapes its release-notes page.
 2. Genuinely new items are added to `data/<product>.json` with `"status": "needs-review"`
@@ -125,6 +126,13 @@ This is the "scrape + flag for review" model you chose:
 
 Pages show a small "⚠ N entries awaiting review" banner and a `Review` badge on any
 `needs-review` rows, so un-curated data is always visibly marked.
+
+**Products with `autoCurate: true` skip step 2's gate** — new entries land as `"curated"`
+directly. Flyway is configured this way: its text is scraped verbatim from Redgate's own
+docs (no noise to filter), and its only facet (licence tier) is almost never inferrable from
+the text, so there's no real human judgement being applied by holding entries for review —
+it was pure rubber-stamping. Monitor keeps the manual gate because platform tagging genuinely
+requires reading each entry.
 
 > **Hand-adding entries is fine too.** Add entries to a product's `data/<product>.json` by
 > hand with `"status": "curated"`.

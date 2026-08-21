@@ -50,14 +50,18 @@ jobs:
           body: |
             The daily scraper picked up changes from the **${{ inputs.product }}** release notes.
 
-            - **New entries flagged for review:** ${{ steps.scrape.outputs.added }}
-            - **Total awaiting review:** ${{ steps.scrape.outputs.needs_review }}
+            - **New entries added:** ${{ steps.scrape.outputs.added }}
+            - **Awaiting review:** ${{ steps.scrape.outputs.needs_review }}
 
             ### Curation checklist
-            For each entry with `"status": "needs-review"` in `data/${{ inputs.product }}.json`:
+            If any entries are awaiting review, for each one with `"status": "needs-review"`
+            in `data/${{ inputs.product }}.json`:
             - [ ] Confirm it is genuinely a feature/change worth listing (delete noise)
             - [ ] Tidy the `text` wording if needed
-            - [ ] Fill product-specific tags (Monitor: `platforms`/`edition`; Flyway: `edition` tier; TDM: `components`)
+            - [ ] Fill product-specific tags (Monitor: `platforms`/`edition`)
             - [ ] Change `"status"` to `"curated"`
+
+            Products configured with `autoCurate` (e.g. Flyway) skip this gate — their new
+            entries already land as `curated`, so a zero count above is expected.
 
             Merging this PR triggers a rebuild and redeploy of the published pages.

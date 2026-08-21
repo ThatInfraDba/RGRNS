@@ -116,12 +116,18 @@ const PRODUCTS = {
       { key: "tier",     label: "Tier",     field: "edition",  type: "single", styles: FLYWAY_TIERS },
       { key: "category", label: "Type",     field: "category", type: "single", styles: CATEGORY_STYLES, accent: true },
     ],
-    // Best-effort tier inference from item text during scrape (hybrid: review/refine later).
+    // Best-effort tier inference from item text during scrape. Tier is rarely
+    // called out explicitly in engine changelog bullets, so this almost never
+    // fires — there's no meaningful human tagging step to gate on here, unlike
+    // Monitor's platform tags. New entries land pre-curated (see autoCurate).
     deriveEdition: (text) => {
       if (/flyway enterprise|enterprise edition/i.test(text)) return "enterprise";
       if (/flyway teams|teams edition/i.test(text)) return "teams";
       return "";
     },
+    // Skip the needs-review gate: scraped text comes verbatim from Redgate's own
+    // docs (no noise to filter), and there's no facet worth holding for review.
+    autoCurate: true,
     primaryStat: { label: "Types", facet: "category" },
   },
 };
