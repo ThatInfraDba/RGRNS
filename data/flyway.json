@@ -2,8 +2,44 @@
   "product": "flyway",
   "productName": "Redgate Flyway",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-06-26",
+  "generated": "2026-08-21",
   "versions": [
+    {
+      "version": "13.3.0",
+      "date": "2026-08-13",
+      "dateDisplay": "13 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.3.0(2026-08-13)"
+    },
+    {
+      "version": "13.2.0",
+      "date": "2026-08-06",
+      "dateDisplay": "06 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)"
+    },
+    {
+      "version": "13.1.0",
+      "date": "2026-07-23",
+      "dateDisplay": "23 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.1.0(2026-07-23)"
+    },
+    {
+      "version": "13.0.0",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)"
+    },
+    {
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)"
+    },
+    {
+      "version": "12.10.0",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)"
+    },
     {
       "version": "12.9.0",
       "date": "2026-06-18",
@@ -289,6 +325,259 @@
   ],
   "entries": [
     {
+      "id": "13.2.0::flyway-now-warns-when-validate-resolves-no-migrations-from-t",
+      "version": "13.2.0",
+      "date": "2026-08-06",
+      "dateDisplay": "06 Aug 2026",
+      "category": "change",
+      "text": "Flyway now warns when `validate` resolves no migrations from the configured locations but the schema history contains applied migrations",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.2.0::mcp-server-project-load-will-no-longer-raise-an-error-if-a-c",
+      "version": "13.2.0",
+      "date": "2026-08-06",
+      "dateDisplay": "06 Aug 2026",
+      "category": "change",
+      "text": "mcp server project load will no longer raise an error if a .conf project was detected in a default location outside of the project root",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.2.0::oss-no-longer-recognises-the-publishresult-or-checkdriftonmi",
+      "version": "13.2.0",
+      "date": "2026-08-06",
+      "dateDisplay": "06 Aug 2026",
+      "category": "change",
+      "text": "OSS no longer recognises the 'publishResult' or 'checkDriftOnMigrate' parameters which had no effect",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.2.0(2026-08-06)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.1.0::deploy-command-result-now-includes-execution-time-in-millise",
+      "version": "13.1.0",
+      "date": "2026-07-23",
+      "dateDisplay": "23 Jul 2026",
+      "category": "feature",
+      "text": "`deploy` command result now includes execution time in milliseconds",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.1.0(2026-07-23)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.1.0::environments-name-setting-and-flyway-setting-environment-var",
+      "version": "13.1.0",
+      "date": "2026-07-23",
+      "dateDisplay": "23 Jul 2026",
+      "category": "feature",
+      "text": "environments_<name>_<setting> and flyway_<setting> environment variables can now use any letter casing in their prefix, e.g. ENVIRONMENTS_PRODUCTION_PASSWORD",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.1.0(2026-07-23)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.0.0::add-support-for-new-includeonlineindexcreation-option-for-or",
+      "version": "13.0.0",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "category": "feature",
+      "text": "Add support for new 'IncludeOnlineIndexCreation' option for Oracle",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.0.0::check-drift-and-check-changes-json-output-now-includes-an-id",
+      "version": "13.0.0",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "category": "feature",
+      "text": "check drift and check changes JSON output now includes an `id` for each difference, allowing drift to be resolved against specific objects",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.0.0::flyway-mcp-server-now-available-exposing-development-time-to",
+      "version": "13.0.0",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "category": "feature",
+      "text": "Flyway MCP server now available, exposing development-time tools an AI agent can call. These tools run flyway commands for both state based and migrations projects",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.0.0::include-the-offending-sql-in-error-messages-for-flyway-deskt",
+      "version": "13.0.0",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "category": "change",
+      "text": "Include the offending SQL in error messages for Flyway Desktop when debug logging is disabled",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "13.0.0::the-docker-provisioner-now-reports-a-dedicated-error-code-wh",
+      "version": "13.0.0",
+      "date": "2026-07-20",
+      "dateDisplay": "20 Jul 2026",
+      "category": "change",
+      "text": "the `docker` provisioner now reports a dedicated error code when a SQL Server or Oracle container is provisioned without accepting the database vendor's EULA",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.0.0(2026-07-20)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::h-help-for-migrate-info-validate-clean-and-undo-now-lists-re",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "-h help for migrate, info, validate, clean, and undo now lists relevant configuration parameters and a usage example instead of just a description",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::testconnection-now-keeps-the-configured-environments-availab",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "`testConnection` now keeps the configured environments available so provisioners that reference another environment (for example the docker provisioner's `sourceEnvironment`) resolve correctly when testing an inline environment",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::add-support-for-new-disable-constraints-for-static-data-opti",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "feature",
+      "text": "Add support for new 'disable-constraints-for-static-data' option for PostgreSQL",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::oracle-sql-error-output-no-longer-shows-the-redundant-sql-st",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "Oracle SQL error output no longer shows the redundant SQL State and Error Code lines, as the ORA-#### code is already in the message",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::testconnection-now-reports-provisioning-progress-e-g-docker-",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "testConnection now reports provisioning progress (e.g. Docker container start-up) when progress output is enabled",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::the-docker-provisioner-now-reports-clear-dedicated-errors-wh",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "the `docker` provisioner now reports clear, dedicated errors when the Docker CLI is not installed or the Docker daemon is not running",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::the-legacy-compose-file-configuration-of-the-preview-docker-",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "the legacy compose-file configuration of the preview `docker` provisioner is deprecated and now logs a warning; use the `docker-compose` provisioner instead",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.11.0::using-auth-without-the-iagreetotheeula-flag-defaults-to-an-i",
+      "version": "12.11.0",
+      "date": "2026-07-09",
+      "dateDisplay": "09 Jul 2026",
+      "category": "change",
+      "text": "using 'auth' without the '-IAgreeToTheEula' flag defaults to an interactive EULA agreement process",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.11.0(2026-07-09)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.10.0::filesystem-location-not-found-messages-now-report-the-effect",
+      "version": "12.10.0",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "change",
+      "text": "filesystem location 'not found' messages now report the effective working directory and prompt you to check it, since running Flyway from the wrong working directory (without -workingDirectory) is a common cause",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.10.0::native-connectors-mode-is-now-enabled-by-default-for-cassand",
+      "version": "12.10.0",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "change",
+      "text": "Native Connectors mode is now enabled by default for Cassandra",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.10.0::outoforder-mode-is-now-reported-at-info-level-instead-of-as-",
+      "version": "12.10.0",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "change",
+      "text": "outOfOrder mode is now reported at info level instead of as a warning",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.10.0::smart-docker-provisioner-keepalive-reuses-the-build-database",
+      "version": "12.10.0",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "feature",
+      "text": "smart docker provisioner keepAlive reuses the build database container across Flyway commands",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.10.0::the-preview-docker-environment-provisioner-has-been-renamed-",
+      "version": "12.10.0",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "change",
+      "text": "The preview `docker` environment provisioner has been renamed to `docker-compose`. Existing `docker` provisioner configurations that use a compose file continue to work via automatic forwarding.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.10.0(2026-06-30)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
       "id": "12.9.0::added-a-check-driftresolutionfolder-setting-to-configure-the",
       "version": "12.9.0",
       "date": "2026-06-18",
@@ -542,6 +831,17 @@
       "edition": ""
     },
     {
+      "id": "12.3.0::release-note-generation-now-reads-from-the-database-enabling",
+      "version": "12.3.0",
+      "date": "2026-03-31",
+      "dateDisplay": "31 Mar 2026",
+      "category": "change",
+      "text": "Release note generation now reads from the database, enabling sub-product notes to be included",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.3.0(2026-03-31)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
       "id": "12.2.0::check-code-now-generates-a-sarif-2-1-0-report-file-sarif-alo",
       "version": "12.2.0",
       "date": "2026-03-26",
@@ -592,6 +892,17 @@
       "dateDisplay": "26 Mar 2026",
       "category": "feature",
       "text": "Added a new rule: RG20 - Object names should be contained within square brackets.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.2.0::added-a-new-rule-rg21-this-is-a-configurable-rule-that-can-e",
+      "version": "12.2.0",
+      "date": "2026-03-26",
+      "dateDisplay": "26 Mar 2026",
+      "category": "feature",
+      "text": "Added a new rule: RG21 - This is a configurable rule that can enforce naming prefixes for multiple object types. (Table, View, Procedure, Function, Schema)",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.2.0(2026-03-26)",
       "status": "needs-review",
       "edition": ""
@@ -685,6 +996,17 @@
       "edition": ""
     },
     {
+      "id": "12.0.2::flyway-check-now-honors-environment-specific-cleandisabled-o",
+      "version": "12.0.2",
+      "date": "2026-02-20",
+      "dateDisplay": "20 Feb 2026",
+      "category": "change",
+      "text": "flyway check now honors environment-specific cleanDisabled override when no provisioner set for the build database",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.2(2026-02-20)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
       "id": "12.0.2::flyway-check-now-honours-environment-specific-cleandisabled-",
       "version": "12.0.2",
       "date": "2026-02-20",
@@ -713,6 +1035,17 @@
       "dateDisplay": "12 Feb 2026",
       "category": "change",
       "text": "Added alias for azureAdInteractive resolver to entraId",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.1(2026-02-12)",
+      "status": "needs-review",
+      "edition": ""
+    },
+    {
+      "id": "12.0.1::check-changes-now-honors-target-parameter-for-setting-a-targ",
+      "version": "12.0.1",
+      "date": "2026-02-12",
+      "dateDisplay": "12 Feb 2026",
+      "category": "feature",
+      "text": "check -changes now honors target parameter for setting a target version",
       "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway12.0.1(2026-02-12)",
       "status": "needs-review",
       "edition": ""
