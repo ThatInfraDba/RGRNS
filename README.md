@@ -1,7 +1,7 @@
 # RG-RNS — Redgate Release-Notes Feature Tracker
 
-Automated, daily-refreshed feature overviews for **Redgate Monitor**, **Redgate Flyway**, and
-**Redgate Flyway Desktop**, built from each product's public release notes.
+Automated, daily-refreshed feature overviews for **Redgate Monitor**, **Redgate Flyway
+Engine**, and **Redgate Flyway Desktop**, built from each product's public release notes.
 
 Each product gets a self-contained, shareable HTML page, plus a combined page with one
 tab per product. Data is stored as plain JSON in [`data/`](data/) and curated through pull
@@ -19,7 +19,7 @@ requests (the "hybrid" model — scrape automatically, review before publishing)
 | File | Contents |
 |------|----------|
 | `site/monitor.html` | Redgate Monitor — standalone, self-contained |
-| `site/flyway.html` | Redgate Flyway — standalone, self-contained |
+| `site/flyway.html` | Redgate Flyway Engine — standalone, self-contained |
 | `site/flyway-desktop.html` | Redgate Flyway Desktop — standalone, self-contained |
 | `site/all-products.html` | All three, as tabs |
 | `site/index.html` | Redirect to `all-products.html` (GitHub Pages landing) |
@@ -33,7 +33,7 @@ Published via GitHub Pages at:
 
 - All products: **https://thatinfradba.github.io/RGRNS/all-products.html**
 - Monitor: **https://thatinfradba.github.io/RGRNS/monitor.html**
-- Flyway: **https://thatinfradba.github.io/RGRNS/flyway.html**
+- Flyway Engine: **https://thatinfradba.github.io/RGRNS/flyway.html**
 - Flyway Desktop: **https://thatinfradba.github.io/RGRNS/flyway-desktop.html**
 
 ### Filters per page
@@ -44,7 +44,7 @@ The **version filter** (select versions include/exclude, and an *upgrade path* f
 | Product | Specialist filters |
 |---------|--------------------|
 | Monitor | **Platform** (SQL Server, PostgreSQL, Oracle, … — multi-select OR) · **Edition** (Enterprise / Preview) |
-| Flyway | **Tier** (Community / Teams / Enterprise) · **Type** (Feature / Change / Improvement) |
+| Flyway Engine | **Tier** (Community / Teams / Enterprise) · **Type** (Feature / Change / Improvement) |
 | Flyway Desktop | **Type** (Feature / Change / Improvement) |
 
 A filter only appears when the data actually contains values for it (so empty facets stay
@@ -107,8 +107,8 @@ Each `data/<product>.json` looks like:
 }
 ```
 
-Product-specific tag fields: Monitor `platforms` (array) + `edition`; Flyway `edition` (the
-tier). `category` is shared.
+Product-specific tag fields: Monitor `platforms` (array) + `edition`; Flyway Engine `edition`
+(the tier). `category` is shared.
 
 ---
 
@@ -132,11 +132,11 @@ Pages show a small "⚠ N entries awaiting review" banner and a `Review` badge o
 `needs-review` rows, so un-curated data is always visibly marked.
 
 **Products with `autoCurate: true` skip step 2's gate** — new entries land as `"curated"`
-directly. Flyway and Flyway Desktop are configured this way: their text is scraped verbatim
-from Redgate's own docs (no noise to filter), and their only optional facet (Flyway's licence
-tier) is almost never inferrable from the text, so there's no real human judgement being
-applied by holding entries for review — it was pure rubber-stamping. Monitor keeps the manual
-gate because platform tagging genuinely requires reading each entry.
+directly. Flyway Engine and Flyway Desktop are configured this way: their text is scraped
+verbatim from Redgate's own docs (no noise to filter), and their only optional facet (Flyway
+Engine's licence tier) is almost never inferrable from the text, so there's no real human
+judgement being applied by holding entries for review — it was pure rubber-stamping. Monitor
+keeps the manual gate because platform tagging genuinely requires reading each entry.
 
 > **Hand-adding entries is fine too.** Add entries to a product's `data/<product>.json` by
 > hand with `"status": "curated"`.
@@ -180,8 +180,8 @@ node scripts/seed-monitor.js "path/to/rgm-features-v12.0-v14.21.html"
 
 - **Which sections become entries** — each product's `capture: [...]`. Monitor is
   intentionally *features only*; add `"improvement"` etc. to widen it.
-- **How far back to scrape** — `sinceMonths` (Flyway defaults to 12 because its engine log
-  goes back to 2010; Monitor is unbounded). Dropped counts are always logged, never
+- **How far back to scrape** — `sinceMonths` (Flyway Engine defaults to 12 because its
+  changelog goes back to 2010; Monitor is unbounded). Dropped counts are always logged, never
   silent. Existing curated history is preserved regardless of this window.
 - **Filters / colours** — the `facets` array and the style maps at the top of the file.
 - **A new product** — add an entry to `PRODUCTS` (source URL, `versionHeading` regex, date
@@ -194,12 +194,12 @@ node scripts/seed-monitor.js "path/to/rgm-features-v12.0-v14.21.html"
 
 - Parsing relies on the docs pages' heading structure (`<h2>` version + `<h3>` section). If
   Redgate restructures a page, update that product's `versionHeading` regex / section names.
-- Flyway scrapes the **Flyway Engine** release notes (the CLI/engine changelog), separate from
-  **Flyway Desktop**.
+- **Flyway Engine** (the CLI/engine changelog) and **Flyway Desktop** (the GUI app) are
+  tracked as separate products, each with its own release-notes source.
 - Flyway Desktop's release notes are split one page per major version (`flyway-desktop-9-…`,
   `-8-`, `-7-`, …); only the current major series is tracked. When Desktop 10 ships, update
   `flywaydesktop.source` in `products.js` to the new page (older curated history is preserved
   regardless).
-- Auto-derived tags (Flyway tier) are best-effort guesses; since Flyway is `autoCurate`, they
-  land as-is rather than being flagged for confirmation — double-check manually if precision
-  matters here.
+- Auto-derived tags (Flyway Engine tier) are best-effort guesses; since it's `autoCurate`,
+  they land as-is rather than being flagged for confirmation — double-check manually if
+  precision matters here.

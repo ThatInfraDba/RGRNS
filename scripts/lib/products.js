@@ -100,7 +100,7 @@ const PRODUCTS = {
 
   flyway: {
     key: "flyway",
-    name: "Redgate Flyway",
+    name: "Redgate Flyway Engine",
     eyebrow: "Flyway Engine release notes",
     // The /release-notes-and-older-versions landing page is an index; the actual
     // change log lives on the Flyway Engine page.

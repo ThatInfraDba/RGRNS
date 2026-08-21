@@ -4,8 +4,8 @@
  * Build the self-contained HTML overviews from data/<product>.json:
  *
  *   site/monitor.html                (Redgate Monitor)
- *   site/flyway.html                 (Redgate Flyway)
- *   site/all-products.html           (both, as tabs)
+ *   site/flyway.html                 (Redgate Flyway Engine)
+ *   site/all-products.html           (all tracked products, as tabs)
  *   site/index.html                  (redirect to all-products.html, for GitHub Pages)
  *
  * Each per-product page is fully standalone (data inlined, no network needed) so it
@@ -360,7 +360,7 @@ function clientMain() {
 
     var state = {
       search: "", facetSel: {}, versions: new Set(), versionMode: "include",
-      versionTab: "select", upgradeFrom: "", upgradeTo: "", sortKey: "date", sortAsc: false,
+      versionTab: "select", upgradeFrom: "", upgradeTo: "", sortKey: null, sortAsc: false,
     };
     facetsWithValues.forEach(function (fv) { state.facetSel[fv.facet.key] = fv.facet.type === "multi" ? new Set([ALL]) : ALL; });
 

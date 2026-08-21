@@ -245,7 +245,7 @@ window.__RNS_DATA = [{"product":"monitor","productName":"Redgate Monitor","eyebr
 
     var state = {
       search: "", facetSel: {}, versions: new Set(), versionMode: "include",
-      versionTab: "select", upgradeFrom: "", upgradeTo: "", sortKey: "date", sortAsc: false,
+      versionTab: "select", upgradeFrom: "", upgradeTo: "", sortKey: null, sortAsc: false,
     };
     facetsWithValues.forEach(function (fv) { state.facetSel[fv.facet.key] = fv.facet.type === "multi" ? new Set([ALL]) : ALL; });
 

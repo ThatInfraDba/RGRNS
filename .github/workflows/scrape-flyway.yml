@@ -1,4 +1,4 @@
-name: Scrape Redgate Flyway
+name: Scrape Redgate Flyway Engine
 
 on:
   schedule:
