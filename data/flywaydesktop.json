@@ -1,0 +1,812 @@
+{
+  "product": "flywaydesktop",
+  "productName": "Redgate Flyway Desktop",
+  "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
+  "generated": "2026-08-21",
+  "versions": [
+    {
+      "version": "9.7.2",
+      "date": "2026-08-21",
+      "dateDisplay": "21 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.2-21August2026"
+    },
+    {
+      "version": "9.7.1",
+      "date": "2026-08-19",
+      "dateDisplay": "19 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.1-19August2026"
+    },
+    {
+      "version": "9.7.0",
+      "date": "2026-08-11",
+      "dateDisplay": "11 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.0-11August2026"
+    },
+    {
+      "version": "9.6.5",
+      "date": "2026-08-05",
+      "dateDisplay": "05 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026"
+    },
+    {
+      "version": "9.6.4",
+      "date": "2026-07-29",
+      "dateDisplay": "29 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.4-29July2026"
+    },
+    {
+      "version": "9.6.3",
+      "date": "2026-07-28",
+      "dateDisplay": "28 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.3-28July2026"
+    },
+    {
+      "version": "9.6.2",
+      "date": "2026-07-21",
+      "dateDisplay": "21 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026"
+    },
+    {
+      "version": "9.6.1",
+      "date": "2026-07-16",
+      "dateDisplay": "16 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.1-16July2026"
+    },
+    {
+      "version": "9.6.0",
+      "date": "2026-07-06",
+      "dateDisplay": "06 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.0-06July2026"
+    },
+    {
+      "version": "9.5.11",
+      "date": "2026-07-02",
+      "dateDisplay": "02 Jul 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.11-02July2026"
+    },
+    {
+      "version": "9.5.10",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.10-30June2026"
+    },
+    {
+      "version": "9.5.9",
+      "date": "2026-06-23",
+      "dateDisplay": "23 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.9-23June2026"
+    },
+    {
+      "version": "9.5.8",
+      "date": "2026-06-18",
+      "dateDisplay": "18 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.8-18June2026"
+    },
+    {
+      "version": "9.5.7",
+      "date": "2026-06-15",
+      "dateDisplay": "15 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.7-15June2026"
+    },
+    {
+      "version": "9.5.6",
+      "date": "2026-06-09",
+      "dateDisplay": "09 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.6-09June2026"
+    },
+    {
+      "version": "9.5.5",
+      "date": "2026-06-04",
+      "dateDisplay": "04 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.5-04June2026"
+    },
+    {
+      "version": "9.5.4",
+      "date": "2026-06-03",
+      "dateDisplay": "03 Jun 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.4-03June2026"
+    },
+    {
+      "version": "9.5.3",
+      "date": "2026-05-27",
+      "dateDisplay": "27 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.3-27May2026"
+    },
+    {
+      "version": "9.5.2",
+      "date": "2026-05-26",
+      "dateDisplay": "26 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.2-26May2026"
+    },
+    {
+      "version": "9.5.1",
+      "date": "2026-05-20",
+      "dateDisplay": "20 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.1-20May2026"
+    },
+    {
+      "version": "9.5.0",
+      "date": "2026-05-18",
+      "dateDisplay": "18 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.0-18May2026"
+    },
+    {
+      "version": "9.4.5",
+      "date": "2026-05-14",
+      "dateDisplay": "14 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.5-14May2026"
+    },
+    {
+      "version": "9.4.4",
+      "date": "2026-05-11",
+      "dateDisplay": "11 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.4-11May2026"
+    },
+    {
+      "version": "9.4.3",
+      "date": "2026-05-07",
+      "dateDisplay": "07 May 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026"
+    },
+    {
+      "version": "9.4.2",
+      "date": "2026-04-29",
+      "dateDisplay": "29 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.2-29April2026"
+    },
+    {
+      "version": "9.3.4",
+      "date": "2026-04-17",
+      "dateDisplay": "17 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.4-17April2026"
+    },
+    {
+      "version": "9.3.3",
+      "date": "2026-04-16",
+      "dateDisplay": "16 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.3-16April2026"
+    },
+    {
+      "version": "9.3.2",
+      "date": "2026-04-14",
+      "dateDisplay": "14 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.2-14April2026"
+    },
+    {
+      "version": "9.3.1",
+      "date": "2026-04-10",
+      "dateDisplay": "10 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.1-10April2026"
+    },
+    {
+      "version": "9.3.0",
+      "date": "2026-04-09",
+      "dateDisplay": "09 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.0-09April2026"
+    },
+    {
+      "version": "9.2.5",
+      "date": "2026-04-08",
+      "dateDisplay": "08 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.5-08April2026"
+    },
+    {
+      "version": "9.2.4",
+      "date": "2026-04-07",
+      "dateDisplay": "07 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.4-07April2026"
+    },
+    {
+      "version": "9.2.3",
+      "date": "2026-04-07",
+      "dateDisplay": "07 Apr 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026"
+    },
+    {
+      "version": "9.2.2",
+      "date": "2026-03-19",
+      "dateDisplay": "19 Mar 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.2-19March2026"
+    },
+    {
+      "version": "9.2.1",
+      "date": "2026-03-18",
+      "dateDisplay": "18 Mar 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.1-18March2026"
+    },
+    {
+      "version": "9.2.0",
+      "date": "2026-03-17",
+      "dateDisplay": "17 Mar 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.0-17March2026"
+    },
+    {
+      "version": "9.1.1",
+      "date": "2026-03-04",
+      "dateDisplay": "04 Mar 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.1-04March2026"
+    },
+    {
+      "version": "9.1.0",
+      "date": "2026-02-18",
+      "dateDisplay": "18 Feb 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026"
+    },
+    {
+      "version": "9.0.3",
+      "date": "2026-02-12",
+      "dateDisplay": "12 Feb 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.3-12February2026"
+    },
+    {
+      "version": "9.0.2",
+      "date": "2026-02-11",
+      "dateDisplay": "11 Feb 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.2-11February2026"
+    },
+    {
+      "version": "9.0.1",
+      "date": "2026-02-05",
+      "dateDisplay": "05 Feb 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.1-05February2026"
+    },
+    {
+      "version": "9.0.0",
+      "date": "2026-02-03",
+      "dateDisplay": "03 Feb 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026"
+    }
+  ],
+  "entries": [
+    {
+      "id": "9.7.2::after-a-manual-deployment-the-review-drawer-now-stays-open-a",
+      "version": "9.7.2",
+      "date": "2026-08-21",
+      "dateDisplay": "21 Aug 2026",
+      "category": "improvement",
+      "text": "After a manual deployment, the review drawer now stays open and shows a dedicated summary of what was deployed, replacing the less prominent success banner",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.2-21August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.7.1::the-create-empty-docker-snapshot-and-backup-provisioners-now",
+      "version": "9.7.1",
+      "date": "2026-08-19",
+      "dateDisplay": "19 Aug 2026",
+      "category": "improvement",
+      "text": "The Create empty, Docker, Snapshot and Backup provisioners now have a link to their documentation in the connection dialog and in the shadow/environment configuration",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.1-19August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.7.0::code-review-policies-can-now-be-configured-directly-in-flywa",
+      "version": "9.7.0",
+      "date": "2026-08-11",
+      "dateDisplay": "11 Aug 2026",
+      "category": "feature",
+      "text": "Code review policies can now be configured directly in Flyway Desktop, using the ‘Code Review Policies’ tab on the project settings screen",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.0-11August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.5::new-automated-deployment-page-is-now-available-in-public-pre",
+      "version": "9.6.5",
+      "date": "2026-08-05",
+      "dateDisplay": "05 Aug 2026",
+      "category": "feature",
+      "text": "New Automated deployment page is now available in public preview, it can be turned off via the Preview features menu",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.5::the-backup-and-create-empty-provisioners-are-no-longer-label",
+      "version": "9.6.5",
+      "date": "2026-08-05",
+      "dateDisplay": "05 Aug 2026",
+      "category": "change",
+      "text": "The Backup and Create empty provisioners are no longer labelled as being in preview",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.5::the-project-settings-dialog-now-asks-for-confirmation-before",
+      "version": "9.6.5",
+      "date": "2026-08-05",
+      "dateDisplay": "05 Aug 2026",
+      "category": "improvement",
+      "text": "The project settings dialog now asks for confirmation before closing if you have unsaved changes",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.4::notifications-now-stack-up-and-dismiss-themselves-after-20-s",
+      "version": "9.6.4",
+      "date": "2026-07-29",
+      "dateDisplay": "29 Jul 2026",
+      "category": "improvement",
+      "text": "Notifications now stack up, and dismiss themselves after 20 seconds with a bar showing the time remaining. Errors still stay until you dismiss them",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.4-29July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.3::added-support-for-databricks-lakebase-as-a-distinct-database",
+      "version": "9.6.3",
+      "date": "2026-07-28",
+      "dateDisplay": "28 Jul 2026",
+      "category": "feature",
+      "text": "Added support for Databricks Lakebase as a distinct database type; the existing Databricks database type has been renamed to Databricks Lakehouse (Unity Catalog)",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.3-28July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.2::add-oracle-option-to-add-online-clause-to-index-creation-scr",
+      "version": "9.6.2",
+      "date": "2026-07-21",
+      "dateDisplay": "21 Jul 2026",
+      "category": "feature",
+      "text": "Add Oracle option to add ‘ONLINE’ clause to index creation scripts",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.2::the-manage-target-databases-dialog-no-longer-shows-an-empty-",
+      "version": "9.6.2",
+      "date": "2026-07-21",
+      "dateDisplay": "21 Jul 2026",
+      "category": "change",
+      "text": "The ‘Manage target databases’ dialog no longer shows an empty state; it now opens straight to adding a database when none are configured",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.2::the-all-objects-rule-in-the-postgresql-filter-editor-is-now-",
+      "version": "9.6.2",
+      "date": "2026-07-21",
+      "dateDisplay": "21 Jul 2026",
+      "category": "change",
+      "text": "The All Objects rule in the PostgreSQL filter editor is now always evaluated first, so more specific rules can override it as intended",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.2::the-project-settings-dialog-no-longer-disables-the-state-bas",
+      "version": "9.6.2",
+      "date": "2026-07-21",
+      "dateDisplay": "21 Jul 2026",
+      "category": "change",
+      "text": "The project settings dialog no longer disables the state-based deployment option when the project already contains migration scripts",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.2::the-run-clean-button-in-the-clean-confirmation-modal-is-no-l",
+      "version": "9.6.2",
+      "date": "2026-07-21",
+      "dateDisplay": "21 Jul 2026",
+      "category": "improvement",
+      "text": "The Run clean button in the clean confirmation modal is no longer disabled. If clicked without ticking ‘Ok to erase’ it now shows a validation error instead",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.1::guided-shadow-provisioning-is-now-always-available-to-enterp",
+      "version": "9.6.1",
+      "date": "2026-07-16",
+      "dateDisplay": "16 Jul 2026",
+      "category": "change",
+      "text": "Guided shadow provisioning is now always available to Enterprise customers, replacing the previous opt-out preview toggle.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.1-16July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.1::the-project-settings-dialog-no-longer-disables-the-state-bas",
+      "version": "9.6.1",
+      "date": "2026-07-16",
+      "dateDisplay": "16 Jul 2026",
+      "category": "change",
+      "text": "The project settings dialog no longer disables the state-based deployment option when the project already contains migration scripts.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.1-16July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.6.0::databricks-advanced-capabilities-support-is-now-available-in",
+      "version": "9.6.0",
+      "date": "2026-07-06",
+      "dateDisplay": "06 Jul 2026",
+      "category": "feature",
+      "text": "Databricks advanced capabilities support is now available in public preview",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.0-06July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.11::hide-the-remove-condition-button-when-only-one-condition-is-",
+      "version": "9.5.11",
+      "date": "2026-07-02",
+      "dateDisplay": "02 Jul 2026",
+      "category": "improvement",
+      "text": "Hide the remove condition button when only one condition is present on filter rules in the Postgres Filter UI",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.11-02July2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.10::the-sample-project-card-on-the-landing-page-now-uses-a-singl",
+      "version": "9.5.10",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "improvement",
+      "text": "The Sample project card on the landing page now uses a single ‘Create a sample project…’ button consistent with the other cards, with the Autopilot docs available as a link in the card description.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.10-30June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.10::when-a-push-is-rejected-because-the-remote-has-changes-you-d",
+      "version": "9.5.10",
+      "date": "2026-06-30",
+      "dateDisplay": "30 Jun 2026",
+      "category": "improvement",
+      "text": "When a push is rejected because the remote has changes you don’t have locally, the error now explains this and offers a ‘Pull changes’ button to resolve it.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.10-30June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.9::git-errors-now-make-it-clear-the-problem-came-from-git-rathe",
+      "version": "9.5.9",
+      "date": "2026-06-23",
+      "dateDisplay": "23 Jun 2026",
+      "category": "improvement",
+      "text": "Git errors now make it clear the problem came from Git rather than Flyway Desktop, with the raw Git output tucked behind a ‘Show raw git output’ toggle.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.9-23June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.8::added-support-for-configuring-check-driftresolutionfolder-as",
+      "version": "9.5.8",
+      "date": "2026-06-18",
+      "dateDisplay": "18 Jun 2026",
+      "category": "feature",
+      "text": "Added support for configuring check.driftResolutionFolder as an advanced parameter for drift analysis operations on the Migrations page.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.8-18June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.8::saving-generated-migrations-is-now-faster",
+      "version": "9.5.8",
+      "date": "2026-06-18",
+      "dateDisplay": "18 Jun 2026",
+      "category": "improvement",
+      "text": "Saving generated migrations is now faster",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.8-18June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.5::filter-ui-for-postgresql-projects-now-includes-an-option-to-",
+      "version": "9.5.5",
+      "date": "2026-06-04",
+      "dateDisplay": "04 Jun 2026",
+      "category": "improvement",
+      "text": "Filter UI for PostgreSQL projects now includes an option to filter across any object type",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.5-04June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.4::postgres-filter-editor-multiple-rules-per-object-type-are-no",
+      "version": "9.5.4",
+      "date": "2026-06-03",
+      "dateDisplay": "03 Jun 2026",
+      "category": "feature",
+      "text": "Postgres filter editor: multiple rules per object type are now allowed, enabling patterns such as ‘Include when table name = X’ alongside ‘Exclude table’",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.4-03June2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.3::add-preview-oracle-option-to-add-existence-checks-to-scripts",
+      "version": "9.5.3",
+      "date": "2026-05-27",
+      "dateDisplay": "27 May 2026",
+      "category": "feature",
+      "text": "Add preview Oracle option to add existence checks to scripts - currently supports creates and drops for functions, indexes, jobs, materialized views, materialized view logs, packages, procedures, queues, queue tables, schedules, sequences, synonyms, tables, table columns, triggers, types, and views.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.3-27May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.3::added-an-option-to-copy-the-sign-in-link-to-the-clipboard-fo",
+      "version": "9.5.3",
+      "date": "2026-05-27",
+      "dateDisplay": "27 May 2026",
+      "category": "improvement",
+      "text": "Added an option to copy the sign-in link to the clipboard, for users where the browser cannot automatically be opened",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.3-27May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.2::added-filters-ui-support-for-postgres-projects-to-enable-use",
+      "version": "9.5.2",
+      "date": "2026-05-26",
+      "dateDisplay": "26 May 2026",
+      "category": "feature",
+      "text": "Added Filters UI support for Postgres projects to enable users to filter out objects during comparison.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.2-26May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.2::flyway-desktop-will-now-restore-previous-open-tabs-on-launch",
+      "version": "9.5.2",
+      "date": "2026-05-26",
+      "dateDisplay": "26 May 2026",
+      "category": "feature",
+      "text": "Flyway Desktop will now restore previous open tabs on launch",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.2-26May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.0::automated-deployment-page-now-has-workflows-with-a-manual-ap",
+      "version": "9.5.0",
+      "date": "2026-05-18",
+      "dateDisplay": "18 May 2026",
+      "category": "feature",
+      "text": "Automated Deployment page now has workflows with a manual approval step, for users with GitHub environments with required viewers.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.0-18May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.5.0::the-choice-between-state-and-migrations-deployments-has-move",
+      "version": "9.5.0",
+      "date": "2026-05-18",
+      "dateDisplay": "18 May 2026",
+      "category": "change",
+      "text": "The choice between state and migrations deployments has moved from project creation to the Deployment page",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.0-18May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.4.4::automated-deployment-page-now-links-out-to-user-s-github-rep",
+      "version": "9.4.4",
+      "date": "2026-05-11",
+      "dateDisplay": "11 May 2026",
+      "category": "feature",
+      "text": "Automated Deployment page now links out to user’s GitHub repository when generating GitHub Actions workflows",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.4-11May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.4.3::added-support-for-the-oracle-checksumincludereferencedscript",
+      "version": "9.4.3",
+      "date": "2026-05-07",
+      "dateDisplay": "07 May 2026",
+      "category": "improvement",
+      "text": "Added support for the oracle.checksumIncludeReferencedScripts parameter in migration commands",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.4.3::adds-a-sql-server-data-deployment-behavior-option-to-use-exi",
+      "version": "9.4.3",
+      "date": "2026-05-07",
+      "dateDisplay": "07 May 2026",
+      "category": "feature",
+      "text": "Adds a SQL Server data deployment behavior option to use existence checks for INSERT statements.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.4.3::now-lists-the-changes-that-will-happen-as-part-of-the-upgrad",
+      "version": "9.4.3",
+      "date": "2026-05-07",
+      "dateDisplay": "07 May 2026",
+      "category": "improvement",
+      "text": "Now lists the changes that will happen as part of the upgrade process, when upgrading projects with obsolete configuration",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.4.2::the-automated-deployment-page-now-generates-github-actions-w",
+      "version": "9.4.2",
+      "date": "2026-04-29",
+      "dateDisplay": "29 Apr 2026",
+      "category": "feature",
+      "text": "The Automated Deployment page now generates Github Actions workflow files, using the new Flyway Github Actions.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.2-29April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.3.4::code-review-issues-such-as-noqa-warnings-and-regex-rules-wil",
+      "version": "9.3.4",
+      "date": "2026-04-17",
+      "dateDisplay": "17 Apr 2026",
+      "category": "change",
+      "text": "Code review issues such as noqa warnings and regex rules will now underline the whole line in addition to adding an icon annotation.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.4-17April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.3.3::added-an-apply-fix-action-to-the-code-review-panel-for-issue",
+      "version": "9.3.3",
+      "date": "2026-04-16",
+      "dateDisplay": "16 Apr 2026",
+      "category": "feature",
+      "text": "Added an apply fix action to the code review panel for issues with a suggested fix.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.3-16April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.3.1::rearranged-options-on-the-automated-deployment-page-to-empha",
+      "version": "9.3.1",
+      "date": "2026-04-10",
+      "dateDisplay": "10 Apr 2026",
+      "category": "improvement",
+      "text": "Rearranged options on the Automated Deployment page to emphasise their position in the heirarchy",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.1-10April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.2.3::added-new-oracle-option-includepermissionsusercheck-to-scrip",
+      "version": "9.2.3",
+      "date": "2026-04-07",
+      "dateDisplay": "07 Apr 2026",
+      "category": "feature",
+      "text": "Added new Oracle option ‘IncludePermissionsUserCheck’ to script a condition around GRANTs and REVOKEs to ensure that these statements are skipped if the grantee/revokee is the user running the deployment script.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.2.3::added-the-ability-to-use-advanced-capabilities-when-connecti",
+      "version": "9.2.3",
+      "date": "2026-04-07",
+      "dateDisplay": "07 Apr 2026",
+      "category": "feature",
+      "text": "Added the ability to use advanced capabilities when connecting to SQL Server using Kerberos authentication",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.2.3::projects-created-with-a-previous-version-of-flyway-that-cont",
+      "version": "9.2.3",
+      "date": "2026-04-07",
+      "dateDisplay": "07 Apr 2026",
+      "category": "improvement",
+      "text": "Projects created with a previous version of Flyway that contain deprecated configuration fields can now be automatically upgraded when opened",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.2.0::code-review-display-preview-added-to-the-generate-migrations",
+      "version": "9.2.0",
+      "date": "2026-03-17",
+      "dateDisplay": "17 Mar 2026",
+      "category": "feature",
+      "text": "Code review display (preview) added to the generate migrations and deployment script screens. Code review will show potential issues in scripts identified during generation, and by configured code analysis engines for Flyway check. By default, Flyway check will use the SQL Fluff engine.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.0-17March2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.2.0::on-the-baseline-screen-the-list-of-available-tables-for-stat",
+      "version": "9.2.0",
+      "date": "2026-03-17",
+      "dateDisplay": "17 Mar 2026",
+      "category": "improvement",
+      "text": "On the baseline screen, the list of available tables for static data configuration will now be retrieved from the configured target environment, if set. If not it will use the development environment.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.0-17March2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.1.1::removed-sql-server-ignoresynonymdependencies-comparison-opti",
+      "version": "9.1.1",
+      "date": "2026-03-04",
+      "dateDisplay": "04 Mar 2026",
+      "category": "change",
+      "text": "Removed SQL Server ‘IgnoreSynonymDependencies’ comparison option",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.1-04March2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.1.0::add-oracle-comparison-option-to-ignore-inivisble-indexes",
+      "version": "9.1.0",
+      "date": "2026-02-18",
+      "dateDisplay": "18 Feb 2026",
+      "category": "feature",
+      "text": "Add Oracle comparison option to ignore inivisble indexes",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.1.0::add-oracle-comparison-option-to-ignore-invisible-columns",
+      "version": "9.1.0",
+      "date": "2026-02-18",
+      "dateDisplay": "18 Feb 2026",
+      "category": "feature",
+      "text": "Add Oracle comparison option to ignore invisible columns",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.1.0::multiple-project-tabs-can-now-be-opened",
+      "version": "9.1.0",
+      "date": "2026-02-18",
+      "dateDisplay": "18 Feb 2026",
+      "category": "feature",
+      "text": "Multiple project tabs can now be opened",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.3::added-previous-next-change-navigation-buttons-to-the-version",
+      "version": "9.0.3",
+      "date": "2026-02-12",
+      "dateDisplay": "12 Feb 2026",
+      "category": "improvement",
+      "text": "Added previous/next change navigation buttons to the version control diff viewer",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.3-12February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.3::the-diff-viewer-header-now-adapts-to-its-container-width-ins",
+      "version": "9.0.3",
+      "date": "2026-02-12",
+      "dateDisplay": "12 Feb 2026",
+      "category": "improvement",
+      "text": "The diff viewer header now adapts to its container width instead of the screen width",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.3-12February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.1::added-scripts-for-deploying-specific-migrations-and-for-roll",
+      "version": "9.0.1",
+      "date": "2026-02-05",
+      "dateDisplay": "05 Feb 2026",
+      "category": "feature",
+      "text": "Added scripts for deploying specific migrations and for rolling back deployments to the automated deployment page",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.1-05February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.1::baseline-scripts-no-longer-give-the-option-for-ai-descriptio",
+      "version": "9.0.1",
+      "date": "2026-02-05",
+      "dateDisplay": "05 Feb 2026",
+      "category": "change",
+      "text": "Baseline scripts no longer give the option for AI descriptions as such scripts are often too large to be used for generation.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.1-05February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.0::added-copy-script-to-clipboard-button-on-automate-deployment",
+      "version": "9.0.0",
+      "date": "2026-02-03",
+      "dateDisplay": "03 Feb 2026",
+      "category": "feature",
+      "text": "Added copy script to clipboard button on Automate deployment page",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.0::check-majorrules-check-majortolerance-check-minorrules-check",
+      "version": "9.0.0",
+      "date": "2026-02-03",
+      "dateDisplay": "03 Feb 2026",
+      "category": "change",
+      "text": "check.majorRules, check.majorTolerance, check.minorRules, check.minorTolerance settings have been removed from the list of advanced parameters on the migration scripts page, as they are no longer supported by the flyway commandline",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.0::improved-form-validation-in-the-create-branch-modal-to-show-",
+      "version": "9.0.0",
+      "date": "2026-02-03",
+      "dateDisplay": "03 Feb 2026",
+      "category": "improvement",
+      "text": "Improved form validation in the create branch modal to show validation messages instead of disabling the button",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.0.0::there-is-now-a-dedicated-deploy-page-for-manual-deployments-",
+      "version": "9.0.0",
+      "date": "2026-02-03",
+      "dateDisplay": "03 Feb 2026",
+      "category": "feature",
+      "text": "There is now a dedicated deploy page for manual deployments on projects with migrations enabled",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026",
+      "status": "curated"
+    }
+  ]
+}

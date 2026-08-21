@@ -130,6 +130,30 @@ const PRODUCTS = {
     autoCurate: true,
     primaryStat: { label: "Types", facet: "category" },
   },
+
+  flywaydesktop: {
+    key: "flywaydesktop",
+    name: "Redgate Flyway Desktop",
+    eyebrow: "Flyway Desktop release notes",
+    // Flyway Desktop's release notes are split across one page per major version
+    // (…/flyway-desktop-9-release-notes, -8-, -7-, …). This tracks the current
+    // major series; bump to the next page when Desktop 10 ships.
+    source: "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
+    outFile: "flyway-desktop.html",
+    // The version-9 page only goes back to Jan 2026 (older majors live on their
+    // own pages), so no rolling window is needed.
+    sinceMonths: null,
+    // Matches: "9.7.2 - 21 August 2026"
+    versionHeading: /^(\d+\.\d+(?:\.\d+)?)\s*[-–—]\s*(.+)$/i,
+    capture: ["feature", "improvement", "change"],
+    facets: [
+      { key: "category", label: "Type", field: "category", type: "single", styles: CATEGORY_STYLES, accent: true },
+    ],
+    // Same reasoning as Flyway Engine: text comes verbatim from Redgate's docs, and
+    // entries rarely carry a platform/tier callout worth gating for review.
+    autoCurate: true,
+    primaryStat: { label: "Types", facet: "category" },
+  },
 };
 
 module.exports = {

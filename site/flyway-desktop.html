@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redgate Flyway Desktop — New Features</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --red:#D42B2B; --red-light:#FAE9E9; --red-mid:#E8A0A0; --navy:#1A1F36; --navy-mid:#2D3454;
+  --slate:#4A5169; --muted:#8B90A7; --border:#E4E6EF; --bg:#F7F8FC; --surface:#FFFFFF;
+  --text:#1A1F36; --text-secondary:#4A5169; --mono:'IBM Plex Mono',monospace; --sans:'IBM Plex Sans',sans-serif;
+}
+body { font-family:var(--sans); background:var(--bg); color:var(--text); font-size:14px; line-height:1.6; min-height:100vh; }
+
+/* Product tabs (combined page) */
+.product-tabs { display:flex; gap:0; background:var(--navy-mid); padding:0 1.5rem; position:sticky; top:0; z-index:200; box-shadow:0 1px 8px rgba(26,31,54,0.15); }
+.ptab { font-family:var(--sans); font-size:13px; font-weight:500; padding:0.85rem 1.25rem; border:none; background:transparent; color:rgba(255,255,255,0.55); cursor:pointer; border-bottom:2px solid transparent; transition:all 0.12s; white-space:nowrap; }
+.ptab:hover { color:#fff; }
+.ptab.active { color:#fff; border-bottom-color:var(--red); }
+.product-pane { display:none; }
+.product-pane.active { display:block; }
+
+/* Header */
+.page-header { background:var(--navy); padding:2.5rem 3rem 2rem; position:relative; overflow:hidden; }
+.page-header::before { content:''; position:absolute; top:-40px; right:-60px; width:300px; height:300px; border-radius:50%; background:rgba(212,43,43,0.15); pointer-events:none; }
+.header-eyebrow { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--red-mid); margin-bottom:0.5rem; }
+.header-title { font-size:28px; font-weight:600; color:#fff; letter-spacing:-0.02em; margin-bottom:0.4rem; }
+.header-sub { font-size:13px; color:rgba(255,255,255,0.5); font-weight:300; }
+.header-stats { display:flex; gap:2rem; margin-top:1.75rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.08); flex-wrap:wrap; }
+.stat { display:flex; flex-direction:column; gap:2px; }
+.stat-val { font-family:var(--mono); font-size:22px; color:#fff; font-weight:500; }
+.stat-lbl { font-size:11px; color:rgba(255,255,255,0.4); text-transform:uppercase; letter-spacing:0.08em; }
+.stat-review .stat-val { color:var(--red-mid); }
+
+/* Controls */
+.controls { background:var(--surface); border-bottom:1px solid var(--border); padding:1rem 3rem; display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; box-shadow:0 1px 8px rgba(26,31,54,0.06); }
+.search-wrap { position:relative; flex:1; min-width:200px; max-width:320px; }
+.search-wrap svg { position:absolute; left:10px; top:50%; transform:translateY(-50%); color:var(--muted); pointer-events:none; }
+.search-input { width:100%; padding:7px 10px 7px 32px; border:1px solid var(--border); border-radius:6px; font-family:var(--sans); font-size:13px; color:var(--text); background:var(--bg); outline:none; transition:border-color 0.15s; }
+.search-input:focus { border-color:var(--red); }
+.filter-group { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+.filter-label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-right:2px; }
+.pill { font-size:12px; font-family:var(--sans); padding:4px 11px; border-radius:20px; border:1px solid var(--border); background:transparent; color:var(--text-secondary); cursor:pointer; transition:all 0.12s; white-space:nowrap; }
+.pill:hover { background:var(--bg); }
+.pill.active { background:var(--navy); color:#fff; border-color:var(--navy); }
+.pill.active.accent-pill { background:var(--red); border-color:var(--red); }
+.result-count { margin-left:auto; font-size:12px; color:var(--muted); font-family:var(--mono); white-space:nowrap; }
+
+/* Table */
+.table-wrap { padding:1.5rem 3rem 3rem; overflow-x:auto; }
+.review-banner { font-size:12px; color:#92400E; background:#FEF3C7; border:1px solid #FDE68A; border-radius:6px; padding:7px 12px; margin-bottom:1rem; display:none; }
+.review-banner.visible { display:block; }
+table { width:100%; border-collapse:collapse; background:var(--surface); border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(26,31,54,0.07),0 0 0 1px var(--border); }
+thead tr { background:var(--navy); }
+th { padding:11px 16px; text-align:left; font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.55); white-space:nowrap; user-select:none; transition:color 0.12s; }
+th.sortable { cursor:pointer; }
+th.sortable:hover { color:rgba(255,255,255,0.9); }
+th .sort-arrow { margin-left:4px; opacity:0.4; font-size:10px; }
+th.sorted .sort-arrow { opacity:1; color:var(--red-mid); }
+tbody tr { border-bottom:1px solid var(--border); transition:background 0.1s; }
+tbody tr:last-child { border-bottom:none; }
+tbody tr:hover { background:#F9FAFD; }
+tbody tr.hidden { display:none; }
+td { padding:11px 16px; vertical-align:top; font-size:13px; color:var(--text-secondary); }
+.td-version { font-family:var(--mono); font-size:12px; color:var(--text); white-space:nowrap; font-weight:500; }
+.td-date { font-family:var(--mono); font-size:12px; white-space:nowrap; color:var(--muted); }
+.chips { display:flex; flex-wrap:wrap; gap:4px; }
+.chip { display:inline-block; font-size:11px; padding:2px 8px; border-radius:4px; font-weight:500; white-space:nowrap; }
+.td-feature { color:var(--text); line-height:1.5; min-width:300px; }
+.review-badge { display:inline-block; font-size:10px; padding:2px 7px; border-radius:3px; font-weight:600; letter-spacing:0.04em; vertical-align:middle; margin-left:6px; white-space:nowrap; background:#FEF3C7; color:#92400E; }
+.td-muted { color:var(--muted); }
+.td-link a { display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--red); text-decoration:none; white-space:nowrap; font-family:var(--mono); }
+.td-link a:hover { text-decoration:underline; }
+.td-link svg { flex-shrink:0; }
+
+/* Version filter */
+.controls-version { background:var(--surface); border-bottom:1px solid var(--border); }
+.controls-version-header { padding:0.55rem 3rem; display:flex; align-items:center; gap:0.75rem; cursor:pointer; user-select:none; }
+.controls-version-header:hover { background:var(--bg); }
+.version-chevron { margin-left:auto; color:var(--muted); transition:transform 0.2s; flex-shrink:0; }
+.controls-version.open .version-chevron { transform:rotate(180deg); }
+.version-active-hint { font-size:11px; font-family:var(--mono); color:var(--red); background:var(--red-light); padding:2px 8px; border-radius:10px; display:none; white-space:nowrap; }
+.version-active-hint.visible { display:inline-block; }
+.controls-version-body { display:none; padding:0.5rem 3rem 0.75rem; gap:0.75rem; align-items:center; flex-wrap:wrap; }
+.controls-version.open .controls-version-body { display:flex; }
+.mode-toggle { display:flex; border:1px solid var(--border); border-radius:6px; overflow:hidden; flex-shrink:0; }
+.mode-btn { font-size:12px; font-family:var(--sans); padding:4px 12px; border:none; background:transparent; color:var(--text-secondary); cursor:pointer; transition:all 0.12s; white-space:nowrap; }
+.mode-btn.active { background:var(--navy); color:#fff; }
+.mode-btn:first-child { border-right:1px solid var(--border); }
+.version-pills { display:flex; flex-wrap:wrap; gap:5px; }
+.vf-tabs { display:flex; gap:0; border-bottom:1px solid var(--border); margin-bottom:0.6rem; }
+.vf-tab { font-size:12px; font-family:var(--sans); padding:5px 14px; border:none; border-bottom:2px solid transparent; background:transparent; color:var(--muted); cursor:pointer; transition:all 0.12s; margin-bottom:-1px; }
+.vf-tab:hover { color:var(--text); }
+.vf-tab.active { color:var(--text); border-bottom-color:var(--red); font-weight:500; }
+.vf-panel { display:none; }
+.vf-panel.active { display:flex; align-items:center; flex-wrap:wrap; gap:0.75rem; }
+.upgrade-selects { display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap; }
+.upgrade-select { font-size:12px; font-family:var(--mono); padding:5px 8px; border:1px solid var(--border); border-radius:6px; background:var(--bg); color:var(--text); cursor:pointer; outline:none; min-width:110px; }
+.upgrade-select:focus { border-color:var(--red); }
+.upgrade-arrow { color:var(--muted); font-size:14px; }
+.upgrade-summary { font-size:12px; color:var(--text-secondary); font-family:var(--mono); background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:4px 10px; display:none; }
+.upgrade-summary.visible { display:inline-block; }
+.upgrade-clear { font-size:12px; font-family:var(--sans); padding:4px 10px; border:1px solid var(--border); border-radius:6px; background:transparent; color:var(--muted); cursor:pointer; display:none; }
+.upgrade-clear:hover { background:var(--bg); color:var(--text); }
+.upgrade-clear.visible { display:inline-block; }
+.no-results { text-align:center; padding:3rem; color:var(--muted); font-size:14px; display:none; }
+.page-footer { text-align:center; padding:1.5rem; font-size:11px; color:var(--muted); border-top:1px solid var(--border); }
+.page-footer a { color:var(--red); text-decoration:none; }
+@media (max-width:768px) {
+  .page-header,.controls,.table-wrap { padding-left:1.25rem; padding-right:1.25rem; }
+  .controls-version-header,.controls-version-body { padding-left:1.25rem; padding-right:1.25rem; }
+  .header-stats { gap:1.25rem; } .controls { gap:0.75rem; } .result-count { margin-left:0; }
+}
+
+</style>
+</head>
+<body>
+<section class="product-pane active" data-product="flywaydesktop"></section>
+<footer class="page-footer">Redgate release-notes overview · generated by the RG-RNS pipeline</footer>
+<script>
+window.__RNS_DATA = [{"product":"flywaydesktop","productName":"Redgate Flyway Desktop","eyebrow":"Flyway Desktop release notes","source":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes","generated":"2026-08-21","itemNoun":"Entries","primaryStat":{"label":"Types","facet":"category"},"facets":[{"key":"category","label":"Type","field":"category","type":"single","accent":true,"styles":{"feature":{"label":"Feature","bg":"#DCFCE7","color":"#14532D"},"improvement":{"label":"Improvement","bg":"#DBEAFE","color":"#1E40AF"},"change":{"label":"Change","bg":"#EDE9FE","color":"#5B21B6"},"fix":{"label":"Fix","bg":"#FEE2E2","color":"#991B1B"},"important":{"label":"Important","bg":"#FEF3C7","color":"#92400E"},"other":{"label":"Other","bg":"#F3F4F6","color":"#374151"}}}],"versions":[{"version":"9.7.2","date":"2026-08-21","dateDisplay":"21 Aug 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.2-21August2026"},{"version":"9.7.1","date":"2026-08-19","dateDisplay":"19 Aug 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.1-19August2026"},{"version":"9.7.0","date":"2026-08-11","dateDisplay":"11 Aug 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.0-11August2026"},{"version":"9.6.5","date":"2026-08-05","dateDisplay":"05 Aug 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026"},{"version":"9.6.4","date":"2026-07-29","dateDisplay":"29 Jul 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.4-29July2026"},{"version":"9.6.3","date":"2026-07-28","dateDisplay":"28 Jul 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.3-28July2026"},{"version":"9.6.2","date":"2026-07-21","dateDisplay":"21 Jul 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026"},{"version":"9.6.1","date":"2026-07-16","dateDisplay":"16 Jul 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.1-16July2026"},{"version":"9.6.0","date":"2026-07-06","dateDisplay":"06 Jul 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.0-06July2026"},{"version":"9.5.11","date":"2026-07-02","dateDisplay":"02 Jul 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.11-02July2026"},{"version":"9.5.10","date":"2026-06-30","dateDisplay":"30 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.10-30June2026"},{"version":"9.5.9","date":"2026-06-23","dateDisplay":"23 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.9-23June2026"},{"version":"9.5.8","date":"2026-06-18","dateDisplay":"18 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.8-18June2026"},{"version":"9.5.7","date":"2026-06-15","dateDisplay":"15 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.7-15June2026"},{"version":"9.5.6","date":"2026-06-09","dateDisplay":"09 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.6-09June2026"},{"version":"9.5.5","date":"2026-06-04","dateDisplay":"04 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.5-04June2026"},{"version":"9.5.4","date":"2026-06-03","dateDisplay":"03 Jun 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.4-03June2026"},{"version":"9.5.3","date":"2026-05-27","dateDisplay":"27 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.3-27May2026"},{"version":"9.5.2","date":"2026-05-26","dateDisplay":"26 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.2-26May2026"},{"version":"9.5.1","date":"2026-05-20","dateDisplay":"20 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.1-20May2026"},{"version":"9.5.0","date":"2026-05-18","dateDisplay":"18 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.0-18May2026"},{"version":"9.4.5","date":"2026-05-14","dateDisplay":"14 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.5-14May2026"},{"version":"9.4.4","date":"2026-05-11","dateDisplay":"11 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.4-11May2026"},{"version":"9.4.3","date":"2026-05-07","dateDisplay":"07 May 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026"},{"version":"9.4.2","date":"2026-04-29","dateDisplay":"29 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.2-29April2026"},{"version":"9.3.4","date":"2026-04-17","dateDisplay":"17 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.4-17April2026"},{"version":"9.3.3","date":"2026-04-16","dateDisplay":"16 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.3-16April2026"},{"version":"9.3.2","date":"2026-04-14","dateDisplay":"14 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.2-14April2026"},{"version":"9.3.1","date":"2026-04-10","dateDisplay":"10 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.1-10April2026"},{"version":"9.3.0","date":"2026-04-09","dateDisplay":"09 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.0-09April2026"},{"version":"9.2.5","date":"2026-04-08","dateDisplay":"08 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.5-08April2026"},{"version":"9.2.4","date":"2026-04-07","dateDisplay":"07 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.4-07April2026"},{"version":"9.2.3","date":"2026-04-07","dateDisplay":"07 Apr 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026"},{"version":"9.2.2","date":"2026-03-19","dateDisplay":"19 Mar 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.2-19March2026"},{"version":"9.2.1","date":"2026-03-18","dateDisplay":"18 Mar 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.1-18March2026"},{"version":"9.2.0","date":"2026-03-17","dateDisplay":"17 Mar 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.0-17March2026"},{"version":"9.1.1","date":"2026-03-04","dateDisplay":"04 Mar 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.1-04March2026"},{"version":"9.1.0","date":"2026-02-18","dateDisplay":"18 Feb 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026"},{"version":"9.0.3","date":"2026-02-12","dateDisplay":"12 Feb 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.3-12February2026"},{"version":"9.0.2","date":"2026-02-11","dateDisplay":"11 Feb 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.2-11February2026"},{"version":"9.0.1","date":"2026-02-05","dateDisplay":"05 Feb 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.1-05February2026"},{"version":"9.0.0","date":"2026-02-03","dateDisplay":"03 Feb 2026","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026"}],"entries":[{"id":"9.7.2::after-a-manual-deployment-the-review-drawer-now-stays-open-a","version":"9.7.2","date":"2026-08-21","dateDisplay":"21 Aug 2026","category":"improvement","text":"After a manual deployment, the review drawer now stays open and shows a dedicated summary of what was deployed, replacing the less prominent success banner","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.2-21August2026","status":"curated"},{"id":"9.7.1::the-create-empty-docker-snapshot-and-backup-provisioners-now","version":"9.7.1","date":"2026-08-19","dateDisplay":"19 Aug 2026","category":"improvement","text":"The Create empty, Docker, Snapshot and Backup provisioners now have a link to their documentation in the connection dialog and in the shadow/environment configuration","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.1-19August2026","status":"curated"},{"id":"9.7.0::code-review-policies-can-now-be-configured-directly-in-flywa","version":"9.7.0","date":"2026-08-11","dateDisplay":"11 Aug 2026","category":"feature","text":"Code review policies can now be configured directly in Flyway Desktop, using the ‘Code Review Policies’ tab on the project settings screen","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.7.0-11August2026","status":"curated"},{"id":"9.6.5::new-automated-deployment-page-is-now-available-in-public-pre","version":"9.6.5","date":"2026-08-05","dateDisplay":"05 Aug 2026","category":"feature","text":"New Automated deployment page is now available in public preview, it can be turned off via the Preview features menu","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026","status":"curated"},{"id":"9.6.5::the-backup-and-create-empty-provisioners-are-no-longer-label","version":"9.6.5","date":"2026-08-05","dateDisplay":"05 Aug 2026","category":"change","text":"The Backup and Create empty provisioners are no longer labelled as being in preview","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026","status":"curated"},{"id":"9.6.5::the-project-settings-dialog-now-asks-for-confirmation-before","version":"9.6.5","date":"2026-08-05","dateDisplay":"05 Aug 2026","category":"improvement","text":"The project settings dialog now asks for confirmation before closing if you have unsaved changes","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.5-05August2026","status":"curated"},{"id":"9.6.4::notifications-now-stack-up-and-dismiss-themselves-after-20-s","version":"9.6.4","date":"2026-07-29","dateDisplay":"29 Jul 2026","category":"improvement","text":"Notifications now stack up, and dismiss themselves after 20 seconds with a bar showing the time remaining. Errors still stay until you dismiss them","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.4-29July2026","status":"curated"},{"id":"9.6.3::added-support-for-databricks-lakebase-as-a-distinct-database","version":"9.6.3","date":"2026-07-28","dateDisplay":"28 Jul 2026","category":"feature","text":"Added support for Databricks Lakebase as a distinct database type; the existing Databricks database type has been renamed to Databricks Lakehouse (Unity Catalog)","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.3-28July2026","status":"curated"},{"id":"9.6.2::add-oracle-option-to-add-online-clause-to-index-creation-scr","version":"9.6.2","date":"2026-07-21","dateDisplay":"21 Jul 2026","category":"feature","text":"Add Oracle option to add ‘ONLINE’ clause to index creation scripts","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026","status":"curated"},{"id":"9.6.2::the-manage-target-databases-dialog-no-longer-shows-an-empty-","version":"9.6.2","date":"2026-07-21","dateDisplay":"21 Jul 2026","category":"change","text":"The ‘Manage target databases’ dialog no longer shows an empty state; it now opens straight to adding a database when none are configured","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026","status":"curated"},{"id":"9.6.2::the-all-objects-rule-in-the-postgresql-filter-editor-is-now-","version":"9.6.2","date":"2026-07-21","dateDisplay":"21 Jul 2026","category":"change","text":"The All Objects rule in the PostgreSQL filter editor is now always evaluated first, so more specific rules can override it as intended","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026","status":"curated"},{"id":"9.6.2::the-project-settings-dialog-no-longer-disables-the-state-bas","version":"9.6.2","date":"2026-07-21","dateDisplay":"21 Jul 2026","category":"change","text":"The project settings dialog no longer disables the state-based deployment option when the project already contains migration scripts","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026","status":"curated"},{"id":"9.6.2::the-run-clean-button-in-the-clean-confirmation-modal-is-no-l","version":"9.6.2","date":"2026-07-21","dateDisplay":"21 Jul 2026","category":"improvement","text":"The Run clean button in the clean confirmation modal is no longer disabled. If clicked without ticking ‘Ok to erase’ it now shows a validation error instead","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.2-21July2026","status":"curated"},{"id":"9.6.1::guided-shadow-provisioning-is-now-always-available-to-enterp","version":"9.6.1","date":"2026-07-16","dateDisplay":"16 Jul 2026","category":"change","text":"Guided shadow provisioning is now always available to Enterprise customers, replacing the previous opt-out preview toggle.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.1-16July2026","status":"curated"},{"id":"9.6.1::the-project-settings-dialog-no-longer-disables-the-state-bas","version":"9.6.1","date":"2026-07-16","dateDisplay":"16 Jul 2026","category":"change","text":"The project settings dialog no longer disables the state-based deployment option when the project already contains migration scripts.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.1-16July2026","status":"curated"},{"id":"9.6.0::databricks-advanced-capabilities-support-is-now-available-in","version":"9.6.0","date":"2026-07-06","dateDisplay":"06 Jul 2026","category":"feature","text":"Databricks advanced capabilities support is now available in public preview","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.6.0-06July2026","status":"curated"},{"id":"9.5.11::hide-the-remove-condition-button-when-only-one-condition-is-","version":"9.5.11","date":"2026-07-02","dateDisplay":"02 Jul 2026","category":"improvement","text":"Hide the remove condition button when only one condition is present on filter rules in the Postgres Filter UI","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.11-02July2026","status":"curated"},{"id":"9.5.10::the-sample-project-card-on-the-landing-page-now-uses-a-singl","version":"9.5.10","date":"2026-06-30","dateDisplay":"30 Jun 2026","category":"improvement","text":"The Sample project card on the landing page now uses a single ‘Create a sample project…’ button consistent with the other cards, with the Autopilot docs available as a link in the card description.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.10-30June2026","status":"curated"},{"id":"9.5.10::when-a-push-is-rejected-because-the-remote-has-changes-you-d","version":"9.5.10","date":"2026-06-30","dateDisplay":"30 Jun 2026","category":"improvement","text":"When a push is rejected because the remote has changes you don’t have locally, the error now explains this and offers a ‘Pull changes’ button to resolve it.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.10-30June2026","status":"curated"},{"id":"9.5.9::git-errors-now-make-it-clear-the-problem-came-from-git-rathe","version":"9.5.9","date":"2026-06-23","dateDisplay":"23 Jun 2026","category":"improvement","text":"Git errors now make it clear the problem came from Git rather than Flyway Desktop, with the raw Git output tucked behind a ‘Show raw git output’ toggle.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.9-23June2026","status":"curated"},{"id":"9.5.8::added-support-for-configuring-check-driftresolutionfolder-as","version":"9.5.8","date":"2026-06-18","dateDisplay":"18 Jun 2026","category":"feature","text":"Added support for configuring check.driftResolutionFolder as an advanced parameter for drift analysis operations on the Migrations page.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.8-18June2026","status":"curated"},{"id":"9.5.8::saving-generated-migrations-is-now-faster","version":"9.5.8","date":"2026-06-18","dateDisplay":"18 Jun 2026","category":"improvement","text":"Saving generated migrations is now faster","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.8-18June2026","status":"curated"},{"id":"9.5.5::filter-ui-for-postgresql-projects-now-includes-an-option-to-","version":"9.5.5","date":"2026-06-04","dateDisplay":"04 Jun 2026","category":"improvement","text":"Filter UI for PostgreSQL projects now includes an option to filter across any object type","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.5-04June2026","status":"curated"},{"id":"9.5.4::postgres-filter-editor-multiple-rules-per-object-type-are-no","version":"9.5.4","date":"2026-06-03","dateDisplay":"03 Jun 2026","category":"feature","text":"Postgres filter editor: multiple rules per object type are now allowed, enabling patterns such as ‘Include when table name = X’ alongside ‘Exclude table’","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.4-03June2026","status":"curated"},{"id":"9.5.3::add-preview-oracle-option-to-add-existence-checks-to-scripts","version":"9.5.3","date":"2026-05-27","dateDisplay":"27 May 2026","category":"feature","text":"Add preview Oracle option to add existence checks to scripts - currently supports creates and drops for functions, indexes, jobs, materialized views, materialized view logs, packages, procedures, queues, queue tables, schedules, sequences, synonyms, tables, table columns, triggers, types, and views.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.3-27May2026","status":"curated"},{"id":"9.5.3::added-an-option-to-copy-the-sign-in-link-to-the-clipboard-fo","version":"9.5.3","date":"2026-05-27","dateDisplay":"27 May 2026","category":"improvement","text":"Added an option to copy the sign-in link to the clipboard, for users where the browser cannot automatically be opened","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.3-27May2026","status":"curated"},{"id":"9.5.2::added-filters-ui-support-for-postgres-projects-to-enable-use","version":"9.5.2","date":"2026-05-26","dateDisplay":"26 May 2026","category":"feature","text":"Added Filters UI support for Postgres projects to enable users to filter out objects during comparison.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.2-26May2026","status":"curated"},{"id":"9.5.2::flyway-desktop-will-now-restore-previous-open-tabs-on-launch","version":"9.5.2","date":"2026-05-26","dateDisplay":"26 May 2026","category":"feature","text":"Flyway Desktop will now restore previous open tabs on launch","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.2-26May2026","status":"curated"},{"id":"9.5.0::automated-deployment-page-now-has-workflows-with-a-manual-ap","version":"9.5.0","date":"2026-05-18","dateDisplay":"18 May 2026","category":"feature","text":"Automated Deployment page now has workflows with a manual approval step, for users with GitHub environments with required viewers.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.0-18May2026","status":"curated"},{"id":"9.5.0::the-choice-between-state-and-migrations-deployments-has-move","version":"9.5.0","date":"2026-05-18","dateDisplay":"18 May 2026","category":"change","text":"The choice between state and migrations deployments has moved from project creation to the Deployment page","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.5.0-18May2026","status":"curated"},{"id":"9.4.4::automated-deployment-page-now-links-out-to-user-s-github-rep","version":"9.4.4","date":"2026-05-11","dateDisplay":"11 May 2026","category":"feature","text":"Automated Deployment page now links out to user’s GitHub repository when generating GitHub Actions workflows","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.4-11May2026","status":"curated"},{"id":"9.4.3::added-support-for-the-oracle-checksumincludereferencedscript","version":"9.4.3","date":"2026-05-07","dateDisplay":"07 May 2026","category":"improvement","text":"Added support for the oracle.checksumIncludeReferencedScripts parameter in migration commands","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026","status":"curated"},{"id":"9.4.3::adds-a-sql-server-data-deployment-behavior-option-to-use-exi","version":"9.4.3","date":"2026-05-07","dateDisplay":"07 May 2026","category":"feature","text":"Adds a SQL Server data deployment behavior option to use existence checks for INSERT statements.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026","status":"curated"},{"id":"9.4.3::now-lists-the-changes-that-will-happen-as-part-of-the-upgrad","version":"9.4.3","date":"2026-05-07","dateDisplay":"07 May 2026","category":"improvement","text":"Now lists the changes that will happen as part of the upgrade process, when upgrading projects with obsolete configuration","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.3-07May2026","status":"curated"},{"id":"9.4.2::the-automated-deployment-page-now-generates-github-actions-w","version":"9.4.2","date":"2026-04-29","dateDisplay":"29 Apr 2026","category":"feature","text":"The Automated Deployment page now generates Github Actions workflow files, using the new Flyway Github Actions.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.4.2-29April2026","status":"curated"},{"id":"9.3.4::code-review-issues-such-as-noqa-warnings-and-regex-rules-wil","version":"9.3.4","date":"2026-04-17","dateDisplay":"17 Apr 2026","category":"change","text":"Code review issues such as noqa warnings and regex rules will now underline the whole line in addition to adding an icon annotation.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.4-17April2026","status":"curated"},{"id":"9.3.3::added-an-apply-fix-action-to-the-code-review-panel-for-issue","version":"9.3.3","date":"2026-04-16","dateDisplay":"16 Apr 2026","category":"feature","text":"Added an apply fix action to the code review panel for issues with a suggested fix.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.3-16April2026","status":"curated"},{"id":"9.3.1::rearranged-options-on-the-automated-deployment-page-to-empha","version":"9.3.1","date":"2026-04-10","dateDisplay":"10 Apr 2026","category":"improvement","text":"Rearranged options on the Automated Deployment page to emphasise their position in the heirarchy","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.3.1-10April2026","status":"curated"},{"id":"9.2.3::added-new-oracle-option-includepermissionsusercheck-to-scrip","version":"9.2.3","date":"2026-04-07","dateDisplay":"07 Apr 2026","category":"feature","text":"Added new Oracle option ‘IncludePermissionsUserCheck’ to script a condition around GRANTs and REVOKEs to ensure that these statements are skipped if the grantee/revokee is the user running the deployment script.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026","status":"curated"},{"id":"9.2.3::added-the-ability-to-use-advanced-capabilities-when-connecti","version":"9.2.3","date":"2026-04-07","dateDisplay":"07 Apr 2026","category":"feature","text":"Added the ability to use advanced capabilities when connecting to SQL Server using Kerberos authentication","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026","status":"curated"},{"id":"9.2.3::projects-created-with-a-previous-version-of-flyway-that-cont","version":"9.2.3","date":"2026-04-07","dateDisplay":"07 Apr 2026","category":"improvement","text":"Projects created with a previous version of Flyway that contain deprecated configuration fields can now be automatically upgraded when opened","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.3-07April2026","status":"curated"},{"id":"9.2.0::code-review-display-preview-added-to-the-generate-migrations","version":"9.2.0","date":"2026-03-17","dateDisplay":"17 Mar 2026","category":"feature","text":"Code review display (preview) added to the generate migrations and deployment script screens. Code review will show potential issues in scripts identified during generation, and by configured code analysis engines for Flyway check. By default, Flyway check will use the SQL Fluff engine.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.0-17March2026","status":"curated"},{"id":"9.2.0::on-the-baseline-screen-the-list-of-available-tables-for-stat","version":"9.2.0","date":"2026-03-17","dateDisplay":"17 Mar 2026","category":"improvement","text":"On the baseline screen, the list of available tables for static data configuration will now be retrieved from the configured target environment, if set. If not it will use the development environment.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.2.0-17March2026","status":"curated"},{"id":"9.1.1::removed-sql-server-ignoresynonymdependencies-comparison-opti","version":"9.1.1","date":"2026-03-04","dateDisplay":"04 Mar 2026","category":"change","text":"Removed SQL Server ‘IgnoreSynonymDependencies’ comparison option","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.1-04March2026","status":"curated"},{"id":"9.1.0::add-oracle-comparison-option-to-ignore-inivisble-indexes","version":"9.1.0","date":"2026-02-18","dateDisplay":"18 Feb 2026","category":"feature","text":"Add Oracle comparison option to ignore inivisble indexes","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026","status":"curated"},{"id":"9.1.0::add-oracle-comparison-option-to-ignore-invisible-columns","version":"9.1.0","date":"2026-02-18","dateDisplay":"18 Feb 2026","category":"feature","text":"Add Oracle comparison option to ignore invisible columns","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026","status":"curated"},{"id":"9.1.0::multiple-project-tabs-can-now-be-opened","version":"9.1.0","date":"2026-02-18","dateDisplay":"18 Feb 2026","category":"feature","text":"Multiple project tabs can now be opened","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.1.0-18February2026","status":"curated"},{"id":"9.0.3::added-previous-next-change-navigation-buttons-to-the-version","version":"9.0.3","date":"2026-02-12","dateDisplay":"12 Feb 2026","category":"improvement","text":"Added previous/next change navigation buttons to the version control diff viewer","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.3-12February2026","status":"curated"},{"id":"9.0.3::the-diff-viewer-header-now-adapts-to-its-container-width-ins","version":"9.0.3","date":"2026-02-12","dateDisplay":"12 Feb 2026","category":"improvement","text":"The diff viewer header now adapts to its container width instead of the screen width","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.3-12February2026","status":"curated"},{"id":"9.0.1::added-scripts-for-deploying-specific-migrations-and-for-roll","version":"9.0.1","date":"2026-02-05","dateDisplay":"05 Feb 2026","category":"feature","text":"Added scripts for deploying specific migrations and for rolling back deployments to the automated deployment page","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.1-05February2026","status":"curated"},{"id":"9.0.1::baseline-scripts-no-longer-give-the-option-for-ai-descriptio","version":"9.0.1","date":"2026-02-05","dateDisplay":"05 Feb 2026","category":"change","text":"Baseline scripts no longer give the option for AI descriptions as such scripts are often too large to be used for generation.","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.1-05February2026","status":"curated"},{"id":"9.0.0::added-copy-script-to-clipboard-button-on-automate-deployment","version":"9.0.0","date":"2026-02-03","dateDisplay":"03 Feb 2026","category":"feature","text":"Added copy script to clipboard button on Automate deployment page","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026","status":"curated"},{"id":"9.0.0::check-majorrules-check-majortolerance-check-minorrules-check","version":"9.0.0","date":"2026-02-03","dateDisplay":"03 Feb 2026","category":"change","text":"check.majorRules, check.majorTolerance, check.minorRules, check.minorTolerance settings have been removed from the list of advanced parameters on the migration scripts page, as they are no longer supported by the flyway commandline","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026","status":"curated"},{"id":"9.0.0::improved-form-validation-in-the-create-branch-modal-to-show-","version":"9.0.0","date":"2026-02-03","dateDisplay":"03 Feb 2026","category":"improvement","text":"Improved form validation in the create branch modal to show validation messages instead of disabling the button","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026","status":"curated"},{"id":"9.0.0::there-is-now-a-dedicated-deploy-page-for-manual-deployments-","version":"9.0.0","date":"2026-02-03","dateDisplay":"03 Feb 2026","category":"feature","text":"There is now a dedicated deploy page for manual deployments on projects with migrations enabled","link":"https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.0.0-03February2026","status":"curated"}]}];
+(function clientMain() {
+  var ALL = "__all";
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]; }); }
+  function parseVersion(v) { return String(v).split(".").map(Number).reduce(function (a, n) { return a * 1000 + (n || 0); }, 0); }
+  function styleFor(facet, val) { return (facet.styles && facet.styles[val]) || null; }
+  function labelFor(facet, val) { var s = styleFor(facet, val); return s ? s.label : val; }
+
+  // Distinct values present for a facet, ordered by the configured style order then extras.
+  function facetValues(payload, facet) {
+    var present = new Set();
+    payload.entries.forEach(function (e) {
+      if (facet.type === "multi") (e[facet.field] || []).forEach(function (v) { if (v) present.add(v); });
+      else if (e[facet.field]) present.add(e[facet.field]);
+    });
+    var ordered = Object.keys(facet.styles || {}).filter(function (k) { return present.has(k); });
+    var extras = [...present].filter(function (k) { return ordered.indexOf(k) === -1; }).sort();
+    return ordered.concat(extras);
+  }
+
+  function chip(facet, val) {
+    var s = styleFor(facet, val);
+    var bg = s ? s.bg : "#F3F4F6", color = s ? s.color : "#374151";
+    return '<span class="chip" style="background:' + bg + ';color:' + color + '">' + esc(labelFor(facet, val)) + "</span>";
+  }
+
+  function renderPane(root, payload) {
+    var facetsWithValues = payload.facets
+      .map(function (f) { return { facet: f, values: facetValues(payload, f) }; })
+      .filter(function (fv) { return fv.values.length > 0; });
+
+    // ── header sub + stats ──
+    var versionsSorted = payload.versions.slice().sort(function (a, b) { return parseVersion(b.version) - parseVersion(a.version); });
+    var newestV = versionsSorted.length ? versionsSorted[0].version : "";
+    var oldestV = versionsSorted.length ? versionsSorted[versionsSorted.length - 1].version : "";
+    var dated = payload.entries.filter(function (e) { return e.date; }).map(function (e) { return e.dateDisplay; });
+    var subBits = [];
+    if (oldestV) subBits.push("Versions " + oldestV + " – " + newestV);
+    subBits.push(payload.versions.length + " releases");
+    if (payload.generated) subBits.push("updated " + payload.generated);
+
+    var needsReview = payload.entries.filter(function (e) { return e.status === "needs-review"; }).length;
+    var primaryCount = 0;
+    if (payload.primaryStat) {
+      var pf = payload.facets.filter(function (f) { return f.key === payload.primaryStat.facet; })[0];
+      if (pf) primaryCount = facetValues(payload, pf).length;
+    }
+
+    var statsHtml =
+      stat(payload.itemNoun, payload.entries.length) +
+      stat("Releases", payload.versions.length) +
+      (payload.primaryStat ? stat(payload.primaryStat.label, primaryCount) : "") +
+      stat("Needs review", needsReview, needsReview > 0 ? "stat-review" : "");
+    function stat(lbl, val, cls) { return '<div class="stat ' + (cls || "") + '"><span class="stat-val">' + val + '</span><span class="stat-lbl">' + esc(lbl) + "</span></div>"; }
+
+    // ── facet filter groups ──
+    var facetGroupsHtml = facetsWithValues.map(function (fv) {
+      var pills = fv.values.map(function (v) {
+        return '<button class="pill ' + (fv.facet.accent ? "accent-pill" : "") + '" data-fval="' + esc(v) + '">' + esc(labelFor(fv.facet, v)) + "</button>";
+      }).join("");
+      return '<div class="filter-group" data-facet="' + esc(fv.facet.key) + '"><span class="filter-label">' + esc(fv.facet.label) + '</span>' +
+        '<button class="pill ' + (fv.facet.accent ? "accent-pill" : "") + ' active" data-fval="' + ALL + '">All</button>' + pills + "</div>";
+    }).join("");
+
+    // ── table head ──
+    var headCols = ['<th class="sortable" data-sort="version">Version <span class="sort-arrow">↕</span></th>',
+      '<th class="sortable" data-sort="date">Release date <span class="sort-arrow">↕</span></th>'];
+    facetsWithValues.forEach(function (fv) {
+      var sortable = fv.facet.type === "single";
+      headCols.push("<th" + (sortable ? ' class="sortable" data-sort="facet:' + esc(fv.facet.field) + '"' : "") + ">" + esc(fv.facet.label) + (sortable ? ' <span class="sort-arrow">↕</span>' : "") + "</th>");
+    });
+    headCols.push("<th>Description</th>");
+    headCols.push("<th>Release notes</th>");
+
+    root.innerHTML =
+      '<header class="page-header"><div class="header-eyebrow">' + esc(payload.eyebrow || "Release notes overview") + "</div>" +
+      '<h1 class="header-title">' + esc(payload.productName) + " — New Features</h1>" +
+      '<p class="header-sub">' + esc(subBits.join("  ·  ")) + "</p>" +
+      '<div class="header-stats">' + statsHtml + "</div></header>" +
+      '<div class="controls"><div class="search-wrap">' +
+      '<svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>' +
+      '<input class="search-input" type="search" data-el="search" placeholder="Search…"></div>' +
+      facetGroupsHtml +
+      '<span class="result-count" data-el="count"></span></div>' +
+      versionFilterSkeleton() +
+      '<div class="table-wrap"><div class="review-banner" data-el="review"></div>' +
+      '<table><thead><tr>' + headCols.join("") + "</tr></thead><tbody data-el=\"tbody\"></tbody></table>" +
+      '<div class="no-results" data-el="noresults">No items match your filters.</div></div>' +
+      '<footer class="page-footer">Source: <a href="' + esc(payload.source) + '" target="_blank" rel="noopener">' + esc(payload.productName) + " release notes</a></footer>";
+
+    if (needsReview > 0) {
+      var rb = root.querySelector('[data-el="review"]');
+      rb.textContent = "⚠ " + needsReview + " entr" + (needsReview === 1 ? "y is" : "ies are") + " auto-extracted and awaiting review — tags may be incomplete.";
+      rb.classList.add("visible");
+    }
+
+    wirePane(root, payload, facetsWithValues, versionsSorted);
+  }
+
+  function versionFilterSkeleton() {
+    return '<div class="controls-version" data-el="versionrow">' +
+      '<div class="controls-version-header" data-el="vtoggle"><span class="filter-label" style="margin:0">Version filter</span>' +
+      '<span class="version-active-hint" data-el="vhint"></span>' +
+      '<svg class="version-chevron" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>' +
+      '<div class="controls-version-body"><div style="width:100%">' +
+      '<div class="vf-tabs"><button class="vf-tab active" data-vtab="select">Select versions</button><button class="vf-tab" data-vtab="upgrade">Upgrade path</button></div>' +
+      '<div class="vf-panel active" data-vpanel="select"><div class="mode-toggle">' +
+      '<button class="mode-btn active" data-mode="include">Include</button><button class="mode-btn" data-mode="exclude">Exclude</button></div>' +
+      '<div class="version-pills" data-el="vpills"></div></div>' +
+      '<div class="vf-panel" data-vpanel="upgrade"><div class="upgrade-selects">' +
+      '<span style="font-size:12px;color:var(--muted);white-space:nowrap">Upgrading from</span>' +
+      '<select class="upgrade-select" data-el="ufrom"><option value="">— select version —</option></select>' +
+      '<span class="upgrade-arrow">→</span><span style="font-size:12px;color:var(--muted);white-space:nowrap">to</span>' +
+      '<select class="upgrade-select" data-el="uto"><option value="">— select version —</option></select></div>' +
+      '<span class="upgrade-summary" data-el="usummary"></span><button class="upgrade-clear" data-el="uclear">Clear</button></div>' +
+      "</div></div></div>";
+  }
+
+  function wirePane(root, payload, facetsWithValues, versionsSorted) {
+    var q = function (sel) { return root.querySelector(sel); };
+    var qa = function (sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+
+    var state = {
+      search: "", facetSel: {}, versions: new Set(), versionMode: "include",
+      versionTab: "select", upgradeFrom: "", upgradeTo: "", sortKey: "date", sortAsc: false,
+    };
+    facetsWithValues.forEach(function (fv) { state.facetSel[fv.facet.key] = fv.facet.type === "multi" ? new Set([ALL]) : ALL; });
+
+    // Build rows
+    var tbody = q('[data-el="tbody"]');
+    payload.entries.forEach(function (e, i) {
+      var tr = document.createElement("tr");
+      tr.dataset.index = i;
+      var cells = ['<td class="td-version">' + esc(e.version) + "</td>",
+        '<td class="td-date">' + esc(e.dateDisplay || "") + "</td>"];
+      facetsWithValues.forEach(function (fv) {
+        if (fv.facet.type === "multi") {
+          var vals = e[fv.facet.field] || [];
+          cells.push('<td><div class="chips">' + vals.map(function (v) { return chip(fv.facet, v); }).join(" ") + "</div></td>");
+        } else {
+          var v = e[fv.facet.field];
+          cells.push("<td>" + (v ? chip(fv.facet, v) : '<span class="td-muted">—</span>') + "</td>");
+        }
+      });
+      var reviewBadge = e.status === "needs-review" ? '<span class="review-badge">Review</span>' : "";
+      cells.push('<td class="td-feature">' + esc(e.text) + reviewBadge + "</td>");
+      cells.push('<td class="td-link"><a href="' + esc(e.link) + '" target="_blank" rel="noopener">' + esc(e.version) +
+        '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>');
+      tr.innerHTML = cells.join("");
+      tbody.appendChild(tr);
+    });
+
+    // Version pills + upgrade dropdowns
+    var vpills = q('[data-el="vpills"]');
+    vpills.innerHTML = versionsSorted.map(function (v) { return '<button class="pill" data-version="' + esc(v.version) + '">' + esc(v.version) + "</button>"; }).join("");
+    var opts = '<option value="">— select version —</option>' + versionsSorted.map(function (v) { return '<option value="' + esc(v.version) + '">' + esc(v.version) + "</option>"; }).join("");
+    q('[data-el="ufrom"]').innerHTML = opts;
+    q('[data-el="uto"]').innerHTML = opts;
+    if (versionsSorted.length) { q('[data-el="uto"]').value = versionsSorted[0].version; state.upgradeTo = versionsSorted[0].version; }
+
+    // ── filtering ──
+    function entryMatchesFacets(e) {
+      return facetsWithValues.every(function (fv) {
+        var sel = state.facetSel[fv.facet.key];
+        if (fv.facet.type === "multi") {
+          if (sel.has(ALL) || sel.size === 0) return true;
+          return (e[fv.facet.field] || []).some(function (v) { return sel.has(v); });
+        }
+        if (sel === ALL) return true;
+        return (e[fv.facet.field] || "") === sel;
+      });
+    }
+    function applyFilters() {
+      var rows = qa('[data-el="tbody"] tr');
+      var visible = 0;
+      rows.forEach(function (tr) {
+        var e = payload.entries[+tr.dataset.index];
+        var matchText = !state.search ||
+          (e.text + " " + e.version + " " + (e.dateDisplay || "")).toLowerCase().indexOf(state.search) !== -1;
+        var matchFacets = entryMatchesFacets(e);
+        var matchVersion = true;
+        if (state.versionTab === "upgrade" && state.upgradeFrom && state.upgradeTo) {
+          var rv = parseVersion(e.version), lo = Math.min(parseVersion(state.upgradeFrom), parseVersion(state.upgradeTo)), hi = Math.max(parseVersion(state.upgradeFrom), parseVersion(state.upgradeTo));
+          matchVersion = rv > lo && rv <= hi;
+        } else if (state.versionTab === "select" && state.versions.size > 0) {
+          var inSet = state.versions.has(e.version);
+          matchVersion = state.versionMode === "include" ? inSet : !inSet;
+        }
+        if (matchText && matchFacets && matchVersion) { tr.classList.remove("hidden"); visible++; }
+        else tr.classList.add("hidden");
+      });
+      q('[data-el="count"]').textContent = visible + " " + (visible === 1 ? "result" : "results");
+      q('[data-el="noresults"]').style.display = visible === 0 ? "block" : "none";
+    }
+
+    // ── sorting ──
+    function sortBy(key) {
+      if (state.sortKey === key) state.sortAsc = !state.sortAsc;
+      else { state.sortKey = key; state.sortAsc = key.indexOf("facet:") === 0; }
+      qa("th").forEach(function (th) { th.classList.remove("sorted"); });
+      var th = q('th[data-sort="' + key + '"]'); if (th) th.classList.add("sorted");
+      var rows = qa('[data-el="tbody"] tr');
+      rows.sort(function (a, b) {
+        var ea = payload.entries[+a.dataset.index], eb = payload.entries[+b.dataset.index], va, vb;
+        if (key === "version") { va = parseVersion(ea.version); vb = parseVersion(eb.version); }
+        else if (key === "date") { va = ea.date || ""; vb = eb.date || ""; }
+        else { var f = key.slice(6); va = ea[f] || ""; vb = eb[f] || ""; }
+        if (typeof va === "number") return state.sortAsc ? va - vb : vb - va;
+        return state.sortAsc ? String(va).localeCompare(vb) : String(vb).localeCompare(va);
+      });
+      rows.forEach(function (r) { tbody.appendChild(r); });
+      applyFilters();
+    }
+
+    function updateHint() {
+      var hint = q('[data-el="vhint"]');
+      if (state.versionTab === "upgrade" && state.upgradeFrom && state.upgradeTo) { hint.textContent = state.upgradeFrom + " → " + state.upgradeTo; hint.classList.add("visible"); }
+      else if (state.versionTab === "select" && state.versions.size > 0) { hint.textContent = (state.versionMode === "exclude" ? "excluding " : "including ") + state.versions.size + " version" + (state.versions.size !== 1 ? "s" : ""); hint.classList.add("visible"); }
+      else { hint.textContent = ""; hint.classList.remove("visible"); }
+    }
+
+    // ── wire events ──
+    q('[data-el="search"]').addEventListener("input", function (ev) { state.search = ev.target.value.toLowerCase(); applyFilters(); });
+
+    qa(".filter-group").forEach(function (group) {
+      var key = group.dataset.facet;
+      var facet = facetsWithValues.filter(function (fv) { return fv.facet.key === key; })[0].facet;
+      group.addEventListener("click", function (ev) {
+        var btn = ev.target.closest(".pill"); if (!btn) return;
+        var val = btn.dataset.fval;
+        if (facet.type === "multi") {
+          var sel = state.facetSel[key];
+          if (val === ALL) sel = new Set([ALL]);
+          else { sel.delete(ALL); if (sel.has(val)) { sel.delete(val); if (sel.size === 0) sel.add(ALL); } else sel.add(val); }
+          state.facetSel[key] = sel;
+          qa('[data-facet="' + key + '"] .pill').forEach(function (b) { b.classList.toggle("active", sel.has(b.dataset.fval)); });
+        } else {
+          state.facetSel[key] = val;
+          qa('[data-facet="' + key + '"] .pill').forEach(function (b) { b.classList.toggle("active", b.dataset.fval === val); });
+        }
+        applyFilters();
+      });
+    });
+
+    qa("th.sortable").forEach(function (th) { th.addEventListener("click", function () { sortBy(th.dataset.sort); }); });
+
+    q('[data-el="vtoggle"]').addEventListener("click", function () { q('[data-el="versionrow"]').classList.toggle("open"); });
+    qa('[data-mode]').forEach(function (b) { b.addEventListener("click", function () { state.versionMode = b.dataset.mode; qa('[data-mode]').forEach(function (x) { x.classList.toggle("active", x.dataset.mode === state.versionMode); }); updateHint(); applyFilters(); }); });
+    qa('[data-vtab]').forEach(function (b) { b.addEventListener("click", function () { state.versionTab = b.dataset.vtab; qa('[data-vtab]').forEach(function (x) { x.classList.toggle("active", x.dataset.vtab === state.versionTab); }); qa('[data-vpanel]').forEach(function (p) { p.classList.toggle("active", p.dataset.vpanel === state.versionTab); }); updateHint(); applyFilters(); }); });
+    vpills.addEventListener("click", function (ev) {
+      var btn = ev.target.closest(".pill"); if (!btn) return;
+      var v = btn.dataset.version;
+      if (state.versions.has(v)) state.versions.delete(v); else state.versions.add(v);
+      btn.classList.toggle("active", state.versions.has(v)); updateHint(); applyFilters();
+    });
+    function applyUpgrade() {
+      state.upgradeFrom = q('[data-el="ufrom"]').value; state.upgradeTo = q('[data-el="uto"]').value;
+      var active = state.upgradeFrom && state.upgradeTo;
+      var summary = q('[data-el="usummary"]'), clr = q('[data-el="uclear"]');
+      if (active) {
+        var lo = parseVersion(state.upgradeFrom) < parseVersion(state.upgradeTo) ? state.upgradeFrom : state.upgradeTo;
+        var hi = lo === state.upgradeFrom ? state.upgradeTo : state.upgradeFrom;
+        summary.textContent = "New features after " + lo + " up to and including " + hi; summary.classList.add("visible"); clr.classList.add("visible");
+      } else { summary.classList.remove("visible"); clr.classList.remove("visible"); }
+      updateHint(); applyFilters();
+    }
+    q('[data-el="ufrom"]').addEventListener("change", applyUpgrade);
+    q('[data-el="uto"]').addEventListener("change", applyUpgrade);
+    q('[data-el="uclear"]').addEventListener("click", function () { state.upgradeFrom = ""; state.upgradeTo = ""; q('[data-el="ufrom"]').value = ""; q('[data-el="uto"]').value = ""; applyUpgrade(); });
+
+    // initial sort (date desc) + render
+    sortBy("date");
+  }
+
+  // ── boot ──
+  var data = window.__RNS_DATA || [];
+  data.forEach(function (payload) {
+    var root = document.querySelector('.product-pane[data-product="' + payload.product + '"]');
+    if (root) renderPane(root, payload);
+  });
+  // product tabs
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".ptab"));
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      tabs.forEach(function (t) { t.classList.remove("active"); });
+      tab.classList.add("active");
+      Array.prototype.slice.call(document.querySelectorAll(".product-pane")).forEach(function (p) {
+        p.classList.toggle("active", p.dataset.product === tab.dataset.ptab);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
