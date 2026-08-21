@@ -1,7 +1,7 @@
 name: _scrape (reusable)
 
-# Reusable scrape job. Each product workflow (scrape-monitor / scrape-flyway /
-# scrape-tdm) calls this with its product key. When the scrape finds new content,
+# Reusable scrape job. Each product workflow (scrape-monitor / scrape-flyway)
+# calls this with its product key. When the scrape finds new content,
 # a pull request is opened so the new entries can be reviewed/curated before they
 # go live (the "hybrid" model).
 
@@ -9,7 +9,7 @@ on:
   workflow_call:
     inputs:
       product:
-        description: "Product key (monitor | flyway | tdm)"
+        description: "Product key (monitor | flyway)"
         required: true
         type: string
 

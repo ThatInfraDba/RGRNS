@@ -3,7 +3,7 @@
 /**
  * Scrape one product's release notes and merge into data/<product>.json.
  *
- *   node scripts/scrape.js <monitor|flyway|tdm>
+ *   node scripts/scrape.js <monitor|flyway>
  *
  * Options (env):
  *   RNS_FIXTURE=<path>   parse a local HTML file instead of fetching (testing/CI offline)

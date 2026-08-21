@@ -1,7 +1,7 @@
 # RG-RNS — Redgate Release-Notes Feature Tracker
 
-Automated, daily-refreshed feature overviews for **Redgate Monitor**, **Redgate Flyway**
-and **Redgate Test Data Manager**, built from each product's public release notes.
+Automated, daily-refreshed feature overviews for **Redgate Monitor** and **Redgate Flyway**,
+built from each product's public release notes.
 
 Each product gets a self-contained, shareable HTML page, plus a combined page with one
 tab per product. Data is stored as plain JSON in [`data/`](data/) and curated through pull
@@ -20,8 +20,7 @@ requests (the "hybrid" model — scrape automatically, review before publishing)
 |------|----------|
 | `site/monitor.html` | Redgate Monitor — standalone, self-contained |
 | `site/flyway.html` | Redgate Flyway — standalone, self-contained |
-| `site/test-data-manager.html` | Redgate Test Data Manager — standalone, self-contained |
-| `site/all-products.html` | All three, as tabs |
+| `site/all-products.html` | Both, as tabs |
 | `site/index.html` | Redirect to `all-products.html` (GitHub Pages landing) |
 
 Every page is **fully self-contained** — the data is inlined, so you can email a file or
@@ -34,7 +33,6 @@ Published via GitHub Pages at:
 - All products: **https://thatinfradba.github.io/RGRNS/all-products.html**
 - Monitor: **https://thatinfradba.github.io/RGRNS/monitor.html**
 - Flyway: **https://thatinfradba.github.io/RGRNS/flyway.html**
-- Test Data Manager: **https://thatinfradba.github.io/RGRNS/test-data-manager.html**
 
 ### Filters per page
 
@@ -45,7 +43,6 @@ The **version filter** (select versions include/exclude, and an *upgrade path* f
 |---------|--------------------|
 | Monitor | **Platform** (SQL Server, PostgreSQL, Oracle, … — multi-select OR) · **Edition** (Enterprise / Preview) |
 | Flyway | **Tier** (Community / Teams / Enterprise) · **Type** (Feature / Change / Improvement) |
-| Test Data Manager | **Component** (TDM GUI / Anonymize / Subsetter / Workflow Engine) · **Type** |
 
 A filter only appears when the data actually contains values for it (so empty facets stay
 hidden until they're curated).
@@ -58,14 +55,13 @@ hidden until they're curated).
 data/                     curated JSON, one file per product (the source of truth)
   monitor.json
   flyway.json
-  tdm.json
 scripts/
   lib/
     products.js           ← central config: URLs, parse rules, filters, recency windows
     parse.js              HTML → versions + raw entries (cheerio)
     merge.js              hybrid merge: preserve curation, flag new entries
     fetch.js              HTTP fetch helper
-  scrape.js               CLI: node scripts/scrape.js <monitor|flyway|tdm>
+  scrape.js               CLI: node scripts/scrape.js <monitor|flyway>
   seed-monitor.js         one-off: import the original hand-built Monitor HTML
   build.js                JSON → self-contained HTML pages
 site/                     generated HTML (published to Pages)
@@ -108,7 +104,7 @@ Each `data/<product>.json` looks like:
 ```
 
 Product-specific tag fields: Monitor `platforms` (array) + `edition`; Flyway `edition` (the
-tier); TDM `components` (array). `category` is shared.
+tier). `category` is shared.
 
 ---
 
@@ -130,9 +126,8 @@ This is the "scrape + flag for review" model you chose:
 Pages show a small "⚠ N entries awaiting review" banner and a `Review` badge on any
 `needs-review` rows, so un-curated data is always visibly marked.
 
-> **Hand-adding entries is fine too.** TDM's public release notes are mostly component-version
-> tables with few itemised changes, so its page is mainly a version timeline. To enrich it,
-> add entries to `data/tdm.json` by hand with `"status": "curated"`.
+> **Hand-adding entries is fine too.** Add entries to a product's `data/<product>.json` by
+> hand with `"status": "curated"`.
 
 ---
 
@@ -143,7 +138,6 @@ npm install                       # one-time
 
 npm run scrape:monitor            # scrape one product into data/monitor.json
 npm run scrape:flyway
-npm run scrape:tdm
 
 npm run build                     # regenerate site/*.html from data/*.json
 ```
@@ -174,7 +168,7 @@ node scripts/seed-monitor.js "path/to/rgm-features-v12.0-v14.21.html"
 - **Which sections become entries** — each product's `capture: [...]`. Monitor is
   intentionally *features only*; add `"improvement"` etc. to widen it.
 - **How far back to scrape** — `sinceMonths` (Flyway defaults to 12 because its engine log
-  goes back to 2010; Monitor/TDM are unbounded). Dropped counts are always logged, never
+  goes back to 2010; Monitor is unbounded). Dropped counts are always logged, never
   silent. Existing curated history is preserved regardless of this window.
 - **Filters / colours** — the `facets` array and the style maps at the top of the file.
 - **A new product** — add an entry to `PRODUCTS` (source URL, `versionHeading` regex, date
@@ -189,5 +183,5 @@ node scripts/seed-monitor.js "path/to/rgm-features-v12.0-v14.21.html"
   Redgate restructures a page, update that product's `versionHeading` regex / section names.
 - Flyway scrapes the **Flyway Engine** release notes (the CLI/engine changelog). Flyway
   Desktop has its own per-version pages — add them as a separate product/source if wanted.
-- Auto-derived tags (Flyway tier, TDM component) are best-effort guesses and are always left
-  as `needs-review` for confirmation.
+- Auto-derived tags (Flyway tier) are best-effort guesses and are always left as
+  `needs-review` for confirmation.

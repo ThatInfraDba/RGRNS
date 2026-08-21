@@ -14,7 +14,7 @@ const MON_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"
  * Parse a date string in any of the formats the Redgate docs use:
  *   "June 10, 2026"   (Monitor)
  *   "2026-06-18"      (Flyway)
- *   "25 June 2026"    (Test Data Manager)
+ *   "25 June 2026"
  * Returns { iso: "YYYY-MM-DD", display: "DD Mon YYYY" } or null if unparseable.
  */
 function parseDate(raw) {

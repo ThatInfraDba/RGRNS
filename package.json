@@ -8,7 +8,6 @@
     "scrape": "node scripts/scrape.js",
     "scrape:monitor": "node scripts/scrape.js monitor",
     "scrape:flyway": "node scripts/scrape.js flyway",
-    "scrape:tdm": "node scripts/scrape.js tdm",
     "seed:monitor": "node scripts/seed-monitor.js",
     "build": "node scripts/build.js"
   },

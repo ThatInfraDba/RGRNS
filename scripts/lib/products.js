@@ -16,7 +16,7 @@
 
 // ── Shared style maps ────────────────────────────────────────────────────────
 
-// Category badge colours (used by Flyway / TDM category facet + badges).
+// Category badge colours (used by Flyway category facet + badges).
 const CATEGORY_STYLES = {
   feature:     { label: "Feature",     bg: "#DCFCE7", color: "#14532D" },
   improvement: { label: "Improvement", bg: "#DBEAFE", color: "#1E40AF" },
@@ -51,14 +51,6 @@ const FLYWAY_TIERS = {
   community:  { label: "Community",  bg: "#F3F4F6", color: "#374151" },
   teams:      { label: "Teams",      bg: "#DBEAFE", color: "#1E40AF" },
   enterprise: { label: "Enterprise", bg: "#FEF3C7", color: "#92400E" },
-};
-
-// Test Data Manager — bundled components.
-const TDM_COMPONENTS = {
-  gui:        { label: "TDM GUI",         bg: "#DBEAFE", color: "#1E3A8A" },
-  anonymize:  { label: "Anonymize",       bg: "#DCFCE7", color: "#14532D" },
-  subsetter:  { label: "Subsetter",       bg: "#EDE9FE", color: "#5B21B6" },
-  workflow:   { label: "Workflow Engine", bg: "#FEF3C7", color: "#92400E" },
 };
 
 // ── Section heading → category normalisation ─────────────────────────────────
@@ -132,33 +124,6 @@ const PRODUCTS = {
     },
     primaryStat: { label: "Types", facet: "category" },
   },
-
-  tdm: {
-    key: "tdm",
-    name: "Redgate Test Data Manager",
-    eyebrow: "Release notes overview",
-    source: "https://documentation.red-gate.com/testdatamanager/release-notes",
-    outFile: "test-data-manager.html",
-    // TDM's page is small (component-version tables); no window needed.
-    sinceMonths: null,
-    // Matches: "0.44.2 - Released on 25 June 2026"  and  "0.37.27 Released on 18 December 2025"
-    versionHeading: /^(\d+\.\d+(?:\.\d+)?)\s*[-–—]?\s*Released on\s+(.+)$/i,
-    capture: ["feature", "improvement", "change", "fix", "important"],
-    facets: [
-      { key: "component", label: "Component", field: "components", type: "multi", styles: TDM_COMPONENTS, accent: true },
-      { key: "category",  label: "Type",      field: "category",   type: "single", styles: CATEGORY_STYLES },
-    ],
-    // Best-effort component inference from item text during scrape.
-    deriveComponents: (text) => {
-      const out = [];
-      if (/\banonymize\b/i.test(text)) out.push("anonymize");
-      if (/\bsubsetter\b/i.test(text)) out.push("subsetter");
-      if (/workflow engine|\bworkflow\b/i.test(text)) out.push("workflow");
-      if (/\bgui\b|user interface|\bui\b/i.test(text)) out.push("gui");
-      return [...new Set(out)];
-    },
-    primaryStat: { label: "Types", facet: "category" },
-  },
 };
 
 module.exports = {
@@ -168,5 +133,4 @@ module.exports = {
   MONITOR_PLATFORMS,
   MONITOR_EDITIONS,
   FLYWAY_TIERS,
-  TDM_COMPONENTS,
 };

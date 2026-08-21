@@ -5,8 +5,7 @@
  *
  *   site/monitor.html                (Redgate Monitor)
  *   site/flyway.html                 (Redgate Flyway)
- *   site/test-data-manager.html      (Redgate Test Data Manager)
- *   site/all-products.html           (all three, as tabs)
+ *   site/all-products.html           (both, as tabs)
  *   site/index.html                  (redirect to all-products.html, for GitHub Pages)
  *
  * Each per-product page is fully standalone (data inlined, no network needed) so it
