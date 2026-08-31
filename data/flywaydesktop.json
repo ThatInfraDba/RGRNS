@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-08-21",
+  "generated": "2026-08-31",
   "versions": [
+    {
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026"
+    },
     {
       "version": "9.7.2",
       "date": "2026-08-21",
@@ -258,6 +264,66 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.8.0::deploying-migrations-to-a-non-empty-target-database-that-has",
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "category": "improvement",
+      "text": "Deploying migrations to a non-empty target database that has never been baselined now offers to baseline it and continue, instead of failing with an error",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.0::guided-setup-is-offered-whenever-the-schema-model-is-empty-e",
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "category": "improvement",
+      "text": "Guided setup is offered whenever the schema model is empty, even once a development database has been linked",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.0::the-manage-target-build-databases-dialog-now-lists-your-data",
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "category": "improvement",
+      "text": "The manage target/build databases dialog now lists your databases immediately, instead of briefly opening empty and resizing once their connection details had been read",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.0::the-pending-migrations-warning-on-the-generate-migrations-pa",
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "category": "improvement",
+      "text": "The pending migrations warning on the Generate migrations page is now more concise, with the full explanation available on demand",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.0::the-save-button-on-the-schema-model-page-is-no-longer-disabl",
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "category": "improvement",
+      "text": "The Save button on the schema model page is no longer disabled when no changes have been detected",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.0::the-shadow-database-setup-for-pending-migrations-has-moved-f",
+      "version": "9.8.0",
+      "date": "2026-08-27",
+      "dateDisplay": "27 Aug 2026",
+      "category": "change",
+      "text": "The shadow database setup for pending migrations has moved from the warning banner’s cog icon to a configure link within the warning details",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.0-27August2026",
+      "status": "curated"
+    },
     {
       "id": "9.7.2::after-a-manual-deployment-the-review-drawer-now-stays-open-a",
       "version": "9.7.2",
