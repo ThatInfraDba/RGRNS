@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-08-21",
+  "generated": "2026-08-31",
   "versions": [
+    {
+      "version": "13.4.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.4.0(2026-08-26)"
+    },
     {
       "version": "13.3.0",
       "date": "2026-08-13",
@@ -324,6 +330,28 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.4.0::removed-the-unused-g-compiler-toolchain-from-the-redgate-azu",
+      "version": "13.4.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "change",
+      "text": "removed the unused g++ compiler toolchain from the Redgate Azure Docker images",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.4.0(2026-08-26)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.4.0::the-flyway-command-line-and-docker-images-now-automatically-",
+      "version": "13.4.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "The Flyway command line and Docker images now automatically use the proxy configured in your operating system. Set the FLYWAY_USE_SYSTEM_PROXIES environment variable to false to disable this.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.4.0(2026-08-26)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.2.0::flyway-now-warns-when-validate-resolves-no-migrations-from-t",
       "version": "13.2.0",
