@@ -2,8 +2,14 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-08-21",
+  "generated": "2026-08-31",
   "versions": [
+    {
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026"
+    },
     {
       "version": "14.29.0",
       "date": "2026-08-11",
@@ -828,6 +834,133 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.30.0::added-a-configuration-tab-to-the-postgresql-server-overview-",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "Added a Configuration tab to the PostgreSQL server overview page, showing the instance's current configuration parameters and recommendations for important settings.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.30.0::enterprise-edition-new-security-user-role-that-allows-read-o",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "Enterprise edition - New Security user role that allows read-only access to Security pages without full admin access.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
+      "edition": "enterprise"
+    },
+    {
+      "id": "14.30.0::enterprise-edition-the-cis-for-sql-server-2022-templates-hav",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "Enterprise edition - CIS for SQL Server 2022 templates updated from v1.2.1 to v1.3.0.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
+    },
+    {
+      "id": "14.30.0::new-alert-type-for-repeated-login-failures-this-alert-is-rai",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "New alert type for repeated login failures — raised when a number of SQL Server login failures occur within a specified window of time. Requires the SQL Server audit log to be enabled on the database.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.30.0::new-alert-type-for-table-bloat-on-postgresql-this-alert-is-r",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "New alert type for table bloat on PostgreSQL — raised when the percentage of dead tuples on a table exceeds a set threshold.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.30.0::new-mcp-tools-to-retrieve-top-blocking-processes-for-sql-ser",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "New MCP tools to retrieve the top blocking processes for SQL Server instances, and to drill into individual blocked child processes.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.30.0::the-improved-reports-experience-is-now-the-default-experienc",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "The improved Reports experience is now the default experience, featuring enhanced tiles and a modern interface. Scheduled PDFs still use the classic experience, but can be opted-in via Report Settings. Users can still switch back to the classic experience if needed.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.30.0::the-new-cluster-and-availability-group-overview-pages-are-th",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "The Cluster and Availability Group Overview pages are now the default experience.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.30.0::the-sql-server-configuration-estate-page-is-now-server-confi",
+      "version": "14.30.0",
+      "date": "2026-08-26",
+      "dateDisplay": "26 Aug 2026",
+      "category": "feature",
+      "text": "The SQL Server configuration estate page is now Server configuration, with a new PostgreSQL tab listing your monitored PostgreSQL servers with the number of critical settings and warnings in each server's configuration, based on recommended values.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.30.0-August26,2026",
+      "status": "curated",
+      "platforms": [
+        "sqlserver",
+        "postgresql"
+      ],
+      "edition": ""
+    },
     {
       "id": "14.28.0::mcp-server-preview-is-now-available-see-https-www-red-gate-c",
       "version": "14.28.0",
