@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-08-31",
+  "generated": "2026-09-03",
   "versions": [
+    {
+      "version": "9.8.1",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.1-03September2026"
+    },
     {
       "version": "9.8.0",
       "date": "2026-08-27",
@@ -264,6 +270,26 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.8.1::added-current-position-to-the-schema-model-version-control-d",
+      "version": "9.8.1",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "improvement",
+      "text": "Added current position to the schema model & version control drawer diff viewer’s previous/next buttons (e.g. ‘2 of 5’)",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.1-03September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.1::comparison-filters-can-now-be-configured-for-databricks-lake",
+      "version": "9.8.1",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "Comparison filters can now be configured for Databricks Lakebase projects, using the same filter editor as PostgreSQL",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.1-03September2026",
+      "status": "curated"
+    },
     {
       "id": "9.8.0::deploying-migrations-to-a-non-empty-target-database-that-has",
       "version": "9.8.0",
