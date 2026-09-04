@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-08-31",
+  "generated": "2026-09-03",
   "versions": [
+    {
+      "version": "13.5.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.5.0(2026-09-03)"
+    },
     {
       "version": "13.4.0",
       "date": "2026-08-26",
@@ -330,6 +336,39 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.5.0::flyway-debug-logs-now-show-the-final-configuration-parameter",
+      "version": "13.5.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "Flyway debug logs now show the final configuration parameters along with where each value originated",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.5.0(2026-09-03)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.5.0::improve-dry-run-script-s-reviewability-by-removing-unnecessa",
+      "version": "13.5.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "change",
+      "text": "Improve dry run script's reviewability by removing unnecessary statements",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.5.0(2026-09-03)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.5.0::the-flyway-mcp-server-tool-create-before-pull-snapshot-has-b",
+      "version": "13.5.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "change",
+      "text": "the Flyway MCP Server tool \"create_before_pull_snapshot\" has been renamed to \"create_schema_model_checkpoint\"",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.5.0(2026-09-03)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.4.0::removed-the-unused-g-compiler-toolchain-from-the-redgate-azu",
       "version": "13.4.0",
