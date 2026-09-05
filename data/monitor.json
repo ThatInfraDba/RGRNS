@@ -2,8 +2,14 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-09-03",
+  "generated": "2026-09-05",
   "versions": [
+    {
+      "version": "14.31.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026"
+    },
     {
       "version": "14.30.0",
       "date": "2026-08-26",
@@ -834,6 +840,66 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.31.0::added-a-new-postgresql-aurora-db-instance-view-to-graph-clou",
+      "version": "14.31.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "Added a new PostgreSQL Aurora DB instance view to graph CloudWatch metrics across all instances within your cluster.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
+    {
+      "id": "14.31.0::azure-flex-hosts-can-now-authenticate-using-a-user-assigned-",
+      "version": "14.31.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "Azure Flex hosts can now authenticate using a user-assigned managed identity, registered as a shared credential on the Configuration > Cloud Services page.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
+    {
+      "id": "14.31.0::enterprise-edition-a-preview-of-version-2-of-the-rest-api-is",
+      "version": "14.31.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "Enterprise edition - A preview of version 2 of the REST API is now available, with endpoints to list monitored servers and query their metric data.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
+    {
+      "id": "14.31.0::mongodb-instances-can-now-be-configured-to-connect-over-tls-",
+      "version": "14.31.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "MongoDB instances can now be configured to connect over TLS, with options to trust self-signed certificates and customize connection and server-selection timeouts, via a new connection properties dialog on the Add server and Edit credentials pages.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
+    {
+      "id": "14.31.0::redgate-assistant-preview-is-available-now-on-server-overvie",
+      "version": "14.31.0",
+      "date": "2026-09-03",
+      "dateDisplay": "03 Sep 2026",
+      "category": "feature",
+      "text": "Redgate Assistant (preview) is available now on Server overview pages for SQL Server on Windows.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
     {
       "id": "14.30.0::added-a-configuration-tab-to-the-postgresql-server-overview-",
       "version": "14.30.0",
