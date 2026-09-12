@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-09-03",
+  "generated": "2026-09-12",
   "versions": [
+    {
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)"
+    },
     {
       "version": "13.5.0",
       "date": "2026-09-03",
@@ -336,6 +342,72 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.6.0::check-code-profile-and-check-code-profiles-let-a-code-analys",
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "category": "feature",
+      "text": "`check.code.profile` and `check.code.profiles` let a code analysis run exclude a named set of rules and rule groups, so analysing a schema model no longer reports violations from rules that cannot apply to it. A built-in `schemaModel` profile is included.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.6.0::flyway-deploy-now-publishes-the-deployment-to-flyway-pipelin",
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "category": "feature",
+      "text": "`flyway deploy` now publishes the deployment to Flyway Pipelines when `publishResult` is enabled",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.6.0::added-a-comment-to-check-dryrun-reports-when-they-are-trunca",
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "category": "change",
+      "text": "Added a comment to check dryrun reports when they are truncated",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.6.0::added-a-deployment-overview-table-to-the-dry-run-report",
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "category": "feature",
+      "text": "Added a deployment overview table to the dry run report",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.6.0::skip-restoring-sql-server-database-name-and-ansi-nulls-if-th",
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "category": "change",
+      "text": "skip restoring sql server database name and 'ansi_nulls' if they're unchanged",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.6.0::the-json-report-file-now-carries-a-top-level-schemaversion-f",
+      "version": "13.6.0",
+      "date": "2026-09-10",
+      "dateDisplay": "10 Sep 2026",
+      "category": "change",
+      "text": "The JSON report file now carries a top-level schemaVersion field identifying the version of the report format.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.6.0(2026-09-10)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.5.0::flyway-debug-logs-now-show-the-final-configuration-parameter",
       "version": "13.5.0",
