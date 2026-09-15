@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-09-14",
+  "generated": "2026-09-15",
   "versions": [
+    {
+      "version": "13.7.0",
+      "date": "2026-09-15",
+      "dateDisplay": "15 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.7.0(2026-09-15)"
+    },
     {
       "version": "13.6.0",
       "date": "2026-09-10",
@@ -342,6 +348,39 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.7.0::flyway-mcp-adds-a-new-test-migrate-tool-that-runs-pending-mi",
+      "version": "13.7.0",
+      "date": "2026-09-15",
+      "dateDisplay": "15 Sep 2026",
+      "category": "feature",
+      "text": "Flyway MCP adds a new Test Migrate tool that runs pending migration scripts against your configured shadow database.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.7.0(2026-09-15)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.7.0::flyway-mcp-now-also-supports-3-sided-diff-by-creating-a-chec",
+      "version": "13.7.0",
+      "date": "2026-09-15",
+      "dateDisplay": "15 Sep 2026",
+      "category": "feature",
+      "text": "Flyway MCP now also supports 3-sided diff by creating a checkpoint of the schema model before updating, so it can be compared against the development database.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.7.0(2026-09-15)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.7.0::remove-unnecessary-executable-files-from-jre-package",
+      "version": "13.7.0",
+      "date": "2026-09-15",
+      "dateDisplay": "15 Sep 2026",
+      "category": "change",
+      "text": "remove unnecessary executable files from JRE package",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.7.0(2026-09-15)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.6.0::check-code-profile-and-check-code-profiles-let-a-code-analys",
       "version": "13.6.0",
