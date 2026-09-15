@@ -860,8 +860,10 @@
       "category": "feature",
       "text": "The additional alert text query on a custom metric can now return more than one value. A query returning several columns or rows is collected as a table and shown as one on the Alert details page and in alert emails. A query returning a single string value behaves exactly as before.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.32.0-September10,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
       "edition": ""
     },
     {
@@ -872,8 +874,10 @@
       "category": "feature",
       "text": "Added a new PostgreSQL Aurora DB instance view to graph CloudWatch metrics across all instances within your cluster.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "aurora"
+      ],
       "edition": ""
     },
     {
@@ -884,8 +888,10 @@
       "category": "feature",
       "text": "Azure Flex hosts can now authenticate using a user-assigned managed identity, registered as a shared credential on the Configuration > Cloud Services page.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "azuresql"
+      ],
       "edition": ""
     },
     {
@@ -896,9 +902,11 @@
       "category": "feature",
       "text": "Enterprise edition - A preview of version 2 of the REST API is now available, with endpoints to list monitored servers and query their metric data.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.31.0::mongodb-instances-can-now-be-configured-to-connect-over-tls-",
@@ -908,8 +916,10 @@
       "category": "feature",
       "text": "MongoDB instances can now be configured to connect over TLS, with options to trust self-signed certificates and customize connection and server-selection timeouts, via a new connection properties dialog on the Add server and Edit credentials pages.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "mongodb"
+      ],
       "edition": ""
     },
     {
@@ -918,11 +928,13 @@
       "date": "2026-09-03",
       "dateDisplay": "03 Sep 2026",
       "category": "feature",
-      "text": "Redgate Assistant (preview) is available now on Server overview pages for SQL Server on Windows.",
+      "text": "Redgate Assistant (preview) is now available on Server overview pages for SQL Server on Windows.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.31.0-September3,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "preview"
     },
     {
       "id": "14.30.0::added-a-configuration-tab-to-the-postgresql-server-overview-",
