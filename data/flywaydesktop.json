@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-09-14",
+  "generated": "2026-09-15",
   "versions": [
+    {
+      "version": "9.9.0",
+      "date": "2026-09-15",
+      "dateDisplay": "15 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.9.0-15September2026"
+    },
     {
       "version": "9.8.4",
       "date": "2026-09-14",
@@ -288,6 +294,16 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.9.0::snowflake-advanced-capabilities-support-is-now-available-in-",
+      "version": "9.9.0",
+      "date": "2026-09-15",
+      "dateDisplay": "15 Sep 2026",
+      "category": "feature",
+      "text": "Snowflake advanced capabilities support is now available in public preview",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.9.0-15September2026",
+      "status": "curated"
+    },
     {
       "id": "9.8.4::added-support-for-snowflake-postgres-as-a-distinct-database-",
       "version": "9.8.4",
