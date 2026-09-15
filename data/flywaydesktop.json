@@ -2,8 +2,26 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-09-03",
+  "generated": "2026-09-14",
   "versions": [
+    {
+      "version": "9.8.4",
+      "date": "2026-09-14",
+      "dateDisplay": "14 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.4-14September2026"
+    },
+    {
+      "version": "9.8.3",
+      "date": "2026-09-09",
+      "dateDisplay": "09 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.3-09September2026"
+    },
+    {
+      "version": "9.8.2",
+      "date": "2026-09-08",
+      "dateDisplay": "08 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.2-08September2026"
+    },
     {
       "version": "9.8.1",
       "date": "2026-09-03",
@@ -270,6 +288,66 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.8.4::added-support-for-snowflake-postgres-as-a-distinct-database-",
+      "version": "9.8.4",
+      "date": "2026-09-14",
+      "dateDisplay": "14 Sep 2026",
+      "category": "feature",
+      "text": "Added support for Snowflake Postgres as a distinct database type",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.4-14September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.4::custom-jvm-options-set-in-the-java-args-environment-variable",
+      "version": "9.8.4",
+      "date": "2026-09-14",
+      "dateDisplay": "14 Sep 2026",
+      "category": "improvement",
+      "text": "Custom JVM options set in the JAVA_ARGS environment variable are now passed through to the Flyway engine",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.4-14September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.4::the-apply-warning-on-the-update-development-page-is-now-more",
+      "version": "9.8.4",
+      "date": "2026-09-14",
+      "dateDisplay": "14 Sep 2026",
+      "category": "improvement",
+      "text": "The apply warning on the Update development page is now more concise, with the full explanation available on demand",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.4-14September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.4::the-databricks-connection-dialog-now-has-dedicated-fields-fo",
+      "version": "9.8.4",
+      "date": "2026-09-14",
+      "dateDisplay": "14 Sep 2026",
+      "category": "improvement",
+      "text": "The Databricks connection dialog now has dedicated fields for the server hostname, port, HTTP path and catalog",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.4-14September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.3::added-alert-to-schema-model-page-for-when-there-are-upstream",
+      "version": "9.8.3",
+      "date": "2026-09-09",
+      "dateDisplay": "09 Sep 2026",
+      "category": "improvement",
+      "text": "Added alert to schema model page for when there are upstream changes in version control, now checked for automatically in the background on window focus",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.3-09September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.8.3::object-level-history-is-now-enabled-by-default-as-a-preview-",
+      "version": "9.8.3",
+      "date": "2026-09-09",
+      "dateDisplay": "09 Sep 2026",
+      "category": "feature",
+      "text": "Object level history is now enabled by default as a preview feature on Enterprise edition, and can be turned off from the Preview features dialog",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.8.3-09September2026",
+      "status": "curated"
+    },
     {
       "id": "9.8.1::added-current-position-to-the-schema-model-version-control-d",
       "version": "9.8.1",
