@@ -49,6 +49,7 @@ jobs:
           labels: |
             release-notes
             needs-review
+          reviewers: ThatInfraDba
           body: |
             The daily scraper picked up changes from the **${{ inputs.product }}** release notes.
 
