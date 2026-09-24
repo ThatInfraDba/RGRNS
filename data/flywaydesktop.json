@@ -2,8 +2,26 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-09-15",
+  "generated": "2026-09-24",
   "versions": [
+    {
+      "version": "9.10.1",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.1-24September2026"
+    },
+    {
+      "version": "9.10.0",
+      "date": "2026-09-22",
+      "dateDisplay": "22 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.0-22September2026"
+    },
+    {
+      "version": "9.9.1",
+      "date": "2026-09-17",
+      "dateDisplay": "17 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.9.1-17September2026"
+    },
     {
       "version": "9.9.0",
       "date": "2026-09-15",
@@ -294,6 +312,56 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.10.1::added-diff-settings-button-to-object-level-history",
+      "version": "9.10.1",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "category": "improvement",
+      "text": "Added diff settings button to object level history",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.1-24September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.0::added-an-in-app-warning-that-oracle-11g-support-will-be-remo",
+      "version": "9.10.0",
+      "date": "2026-09-22",
+      "dateDisplay": "22 Sep 2026",
+      "category": "change",
+      "text": "Added an in-app warning that Oracle 11g support will be removed in a future major release",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.0-22September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.0::deploying-now-saves-a-snapshot-by-default-so-drift-analysis-",
+      "version": "9.10.0",
+      "date": "2026-09-22",
+      "dateDisplay": "22 Sep 2026",
+      "category": "change",
+      "text": "Deploying now saves a snapshot by default, so drift analysis and rollbacks are available without turning the option on first",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.0-22September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.0::object-level-history-diff-header-now-shows-the-short-hash-of",
+      "version": "9.10.0",
+      "date": "2026-09-22",
+      "dateDisplay": "22 Sep 2026",
+      "category": "improvement",
+      "text": "Object level history diff header now shows the short hash of the selected commit, which can be manually copied",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.0-22September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.9.1::object-level-history-can-explain-what-a-commit-did-to-the-se",
+      "version": "9.9.1",
+      "date": "2026-09-17",
+      "dateDisplay": "17 Sep 2026",
+      "category": "feature",
+      "text": "Object level history can explain what a commit did to the selected object with Redgate AI, via an ‘Explain this change’ button in the Changes panel",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.9.1-17September2026",
+      "status": "curated"
+    },
     {
       "id": "9.9.0::snowflake-advanced-capabilities-support-is-now-available-in-",
       "version": "9.9.0",
