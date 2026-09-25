@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-09-15",
+  "generated": "2026-09-24",
   "versions": [
+    {
+      "version": "13.8.0",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.8.0(2026-09-24)"
+    },
     {
       "version": "13.7.0",
       "date": "2026-09-15",
@@ -348,6 +354,61 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.8.0::testconnection-environmentname-names-the-environment-supplie",
+      "version": "13.8.0",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "category": "change",
+      "text": "`testConnection.environmentName` names the environment supplied on standard input, so provisioners act on the environment being tested rather than standing up a second one, and progress and error messages name it rather than `default`",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.8.0(2026-09-24)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.8.0::connections-now-report-their-application-name-as-redgate-fly",
+      "version": "13.8.0",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "category": "change",
+      "text": "connections now report their application name as \"Redgate_Flyway\" rather than \"Flyway by Redgate\" on every database that supports it",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.8.0(2026-09-24)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.8.0::databricks-connections-now-identify-flyway-to-databricks-as-",
+      "version": "13.8.0",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "category": "change",
+      "text": "Databricks connections now identify Flyway to Databricks as \"Redgate_Flyway\" via the UserAgentEntry connection property",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.8.0(2026-09-24)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.8.0::drift-results-are-published-to-flyway-pipelines-for-any-drif",
+      "version": "13.8.0",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "category": "change",
+      "text": "drift results are published to Flyway Pipelines for any drift check when publishResult is enabled, not only for checks against a Flyway Pipelines snapshot",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.8.0(2026-09-24)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.8.0::flyway-now-sets-the-pgjdbc-assumeminserverversion-property-t",
+      "version": "13.8.0",
+      "date": "2026-09-24",
+      "dateDisplay": "24 Sep 2026",
+      "category": "change",
+      "text": "Flyway now sets the pgjdbc `assumeMinServerVersion` property to 9.1 on PostgreSQL connections",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.8.0(2026-09-24)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.7.0::flyway-mcp-adds-a-new-test-migrate-tool-that-runs-pending-mi",
       "version": "13.7.0",
