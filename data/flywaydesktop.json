@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-09-24",
+  "generated": "2026-10-01",
   "versions": [
+    {
+      "version": "9.10.2",
+      "date": "2026-09-29",
+      "dateDisplay": "29 Sep 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.2-29September2026"
+    },
     {
       "version": "9.10.1",
       "date": "2026-09-24",
@@ -312,6 +318,56 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.10.2::a-search-bar-has-been-added-to-the-code-review-settings-page",
+      "version": "9.10.2",
+      "date": "2026-09-29",
+      "dateDisplay": "29 Sep 2026",
+      "category": "improvement",
+      "text": "A search bar has been added to the code review settings page, allowing you to find the policies you’re interested in more easily",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.2-29September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.2::ai-generated-migration-descriptions-are-now-shorter-at-most-",
+      "version": "9.10.2",
+      "date": "2026-09-29",
+      "dateDisplay": "29 Sep 2026",
+      "category": "improvement",
+      "text": "AI-generated migration descriptions are now shorter, at most 50 characters, so migration file names no longer risk Windows ‘path too long’ errors",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.2-29September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.2::display-the-currently-executing-flyway-command-when-a-comman",
+      "version": "9.10.2",
+      "date": "2026-09-29",
+      "dateDisplay": "29 Sep 2026",
+      "category": "improvement",
+      "text": "Display the currently executing Flyway command when a command is in progress on the Migrations page",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.2-29September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.2::it-is-now-possible-to-configure-publishing-to-flyway-insight",
+      "version": "9.10.2",
+      "date": "2026-09-29",
+      "dateDisplay": "29 Sep 2026",
+      "category": "feature",
+      "text": "It is now possible to configure publishing to Flyway Insights from project settings",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.2-29September2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.2::object-level-history-now-shows-commit-authors-by-name-with-t",
+      "version": "9.10.2",
+      "date": "2026-09-29",
+      "dateDisplay": "29 Sep 2026",
+      "category": "improvement",
+      "text": "Object level history now shows commit authors by name, with their email address on hover",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.2-29September2026",
+      "status": "curated"
+    },
     {
       "id": "9.10.1::added-diff-settings-button-to-object-level-history",
       "version": "9.10.1",
