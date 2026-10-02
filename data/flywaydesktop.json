@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-10-01",
+  "generated": "2026-10-02",
   "versions": [
+    {
+      "version": "9.10.3",
+      "date": "2026-10-01",
+      "dateDisplay": "01 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.3-01October2026"
+    },
     {
       "version": "9.10.2",
       "date": "2026-09-29",
@@ -318,6 +324,26 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.10.3::log-files-older-than-a-month-are-now-deleted-when-flyway-des",
+      "version": "9.10.3",
+      "date": "2026-10-01",
+      "dateDisplay": "01 Oct 2026",
+      "category": "improvement",
+      "text": "Log files older than a month are now deleted when Flyway Desktop starts, rather than being kept indefinitely. Choose a different period, or keep them all, under Settings > Log retention",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.3-01October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.3::the-object-level-history-heading-now-shows-the-current-branc",
+      "version": "9.10.3",
+      "date": "2026-10-01",
+      "dateDisplay": "01 Oct 2026",
+      "category": "improvement",
+      "text": "The object level history heading now shows the current branch, schema and object type alongside the object name",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.3-01October2026",
+      "status": "curated"
+    },
     {
       "id": "9.10.2::a-search-bar-has-been-added-to-the-code-review-settings-page",
       "version": "9.10.2",
