@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-10-02",
+  "generated": "2026-10-08",
   "versions": [
+    {
+      "version": "13.10.0",
+      "date": "2026-10-08",
+      "dateDisplay": "08 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.0(2026-10-08)"
+    },
     {
       "version": "13.9.0",
       "date": "2026-10-01",
@@ -366,6 +372,61 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.10.0::checkdriftonmigrate-is-deprecated-and-now-logs-a-warning-whe",
+      "version": "13.10.0",
+      "date": "2026-10-08",
+      "dateDisplay": "08 Oct 2026",
+      "category": "change",
+      "text": "`checkDriftOnMigrate` is deprecated and now logs a warning when used",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.0(2026-10-08)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.0::flywayservicepublish-publishreport-is-deprecated-and-now-log",
+      "version": "13.10.0",
+      "date": "2026-10-08",
+      "dateDisplay": "08 Oct 2026",
+      "category": "change",
+      "text": "`flywayServicePublish.publishReport` is deprecated and now logs a warning when used",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.0(2026-10-08)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.0::generate-migrations-mcp-tool-accepts-an-optional-generateund",
+      "version": "13.10.0",
+      "date": "2026-10-08",
+      "dateDisplay": "08 Oct 2026",
+      "category": "feature",
+      "text": "`generate_migrations` MCP tool accepts an optional `generateUndoScripts` parameter to override the project's undo-script generation setting for a single call",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.0(2026-10-08)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.0::new-lakebase-property-resolver-lets-flyway-connect-to-databr",
+      "version": "13.10.0",
+      "date": "2026-10-08",
+      "dateDisplay": "08 Oct 2026",
+      "category": "feature",
+      "text": "New `lakebase` property resolver lets Flyway connect to Databricks Lakebase using an interactive Databricks sign-in, with no stored credentials",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.0(2026-10-08)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.0::plugin-parameters-such-as-undosqlmigrationprefix-and-check-b",
+      "version": "13.10.0",
+      "date": "2026-10-08",
+      "dateDisplay": "08 Oct 2026",
+      "category": "feature",
+      "text": "Plugin parameters such as `undoSqlMigrationPrefix` and `check.buildEnvironment` can now be set per environment under `environments.name.flyway` namespace in `TOML`",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.0(2026-10-08)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.9.0::init-no-longer-writes-the-root-redgatecompare-filterfile-set",
       "version": "13.9.0",
