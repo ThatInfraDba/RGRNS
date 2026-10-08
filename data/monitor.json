@@ -890,9 +890,11 @@
       "category": "feature",
       "text": "Enterprise edition - Center for Internet Security (CIS) SQL Server 2022 configuration compliance template now targets only SQL Server 2022 servers. (This is configurable if you want the old behavior back.)",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.35.0-October7,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.35.0::enterprise-edition-cis-configuration-compliance-templates-fo",
@@ -902,9 +904,11 @@
       "category": "feature",
       "text": "Enterprise edition - CIS Configuration compliance templates for SQL Server 2025, 2022, and 2019 are certified by CIS.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.35.0-October7,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.35.0::enterprise-edition-configuration-compliance-templates-can-no",
@@ -914,9 +918,11 @@
       "category": "feature",
       "text": "Enterprise edition - Configuration compliance templates can now be limited to checking only certain SQL Server versions and platforms.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.35.0-October7,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.35.0::enterprise-edition-database-level-configuration-compliance-t",
@@ -926,9 +932,11 @@
       "category": "feature",
       "text": "Enterprise edition - Database-level configuration compliance template added for SQL Server 2022 based on CIS benchmark.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.35.0-October7,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.35.0::enterprise-edition-server-and-database-level-templates-added",
@@ -938,9 +946,11 @@
       "category": "feature",
       "text": "Enterprise edition - Server- and database-level templates added for SQL Server 2025, 2019, 2017, and 2016 using automated checks from the CIS benchmarks.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.35.0-October7,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.35.0::monitoring-of-postgresql-instances-running-on-windows-is-now",
@@ -950,8 +960,10 @@
       "category": "feature",
       "text": "Monitoring of PostgreSQL instances running on Windows is now supported. See the documentation for more information.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.35.0-October7,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
       "edition": ""
     },
     {
