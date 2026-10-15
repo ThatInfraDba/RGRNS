@@ -2,8 +2,20 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-10-06",
+  "generated": "2026-10-15",
   "versions": [
+    {
+      "version": "9.10.6",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.6-14October2026"
+    },
+    {
+      "version": "9.10.5",
+      "date": "2026-10-12",
+      "dateDisplay": "12 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.5-12October2026"
+    },
     {
       "version": "9.10.4",
       "date": "2026-10-06",
@@ -330,6 +342,66 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.10.6::databricks-lakebase-connections-can-now-sign-in-to-databrick",
+      "version": "9.10.6",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "category": "feature",
+      "text": "Databricks Lakebase connections can now sign in to Databricks interactively through the browser",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.6-14October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.6::databricks-lakehouse-connections-can-now-sign-in-interactive",
+      "version": "9.10.6",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "category": "feature",
+      "text": "Databricks Lakehouse connections can now sign in interactively through the browser. Choose ‘OAuth Interactive Sign-In’ from the new Authentication dropdown in the connection dialog",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.6-14October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.5::copying-the-flyway-command-on-the-migrations-page-now-confir",
+      "version": "9.10.5",
+      "date": "2026-10-12",
+      "dateDisplay": "12 Oct 2026",
+      "category": "improvement",
+      "text": "Copying the Flyway command on the migrations page now confirms with a ‘Copied’ tooltip",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.5-12October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.5::display-progress-logs-when-a-flyway-command-completes-on-the",
+      "version": "9.10.5",
+      "date": "2026-10-12",
+      "dateDisplay": "12 Oct 2026",
+      "category": "improvement",
+      "text": "Display progress logs when a Flyway command completes on the Migrations page",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.5-12October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.5::script-and-file-names-are-easier-to-read-across-the-various-",
+      "version": "9.10.5",
+      "date": "2026-10-12",
+      "dateDisplay": "12 Oct 2026",
+      "category": "improvement",
+      "text": "Script and file names are easier to read across the various preview panels, now that the heading above them takes up less space",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.5-12October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.5::surrounding-double-quotes-are-now-removed-from-jdbc-urls-pas",
+      "version": "9.10.5",
+      "date": "2026-10-12",
+      "dateDisplay": "12 Oct 2026",
+      "category": "improvement",
+      "text": "Surrounding double quotes are now removed from JDBC URLs pasted into connection dialogs, such as those copied from the Snowflake website",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.5-12October2026",
+      "status": "curated"
+    },
     {
       "id": "9.10.4::add-preview-oracle-option-to-preserve-the-case-of-schema-nam",
       "version": "9.10.4",
