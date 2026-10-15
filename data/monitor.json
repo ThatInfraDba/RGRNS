@@ -2,8 +2,14 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-10-08",
+  "generated": "2026-10-15",
   "versions": [
+    {
+      "version": "14.36.0",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.36.0-October14,2026"
+    },
     {
       "version": "14.35.0",
       "date": "2026-10-07",
@@ -882,6 +888,18 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.36.0::baselines-are-now-shown-on-report-analysis-tiles",
+      "version": "14.36.0",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "category": "feature",
+      "text": "Baselines are now shown on report analysis tiles.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.36.0-October14,2026",
+      "status": "curated",
+      "platforms": [],
+      "edition": ""
+    },
     {
       "id": "14.35.0::enterprise-edition-center-for-internet-security-cis-sql-serv",
       "version": "14.35.0",
