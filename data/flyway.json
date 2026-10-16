@@ -2,8 +2,20 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-10-08",
+  "generated": "2026-10-16",
   "versions": [
+    {
+      "version": "13.10.2",
+      "date": "2026-10-15",
+      "dateDisplay": "15 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.2(2026-10-15)"
+    },
+    {
+      "version": "13.10.1",
+      "date": "2026-10-15",
+      "dateDisplay": "15 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.1(2026-10-15)"
+    },
     {
       "version": "13.10.0",
       "date": "2026-10-08",
@@ -372,6 +384,50 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.10.1::flyway-now-prints-the-name-of-the-environment-it-s-working-o",
+      "version": "13.10.1",
+      "date": "2026-10-15",
+      "dateDisplay": "15 Oct 2026",
+      "category": "feature",
+      "text": "Flyway now prints the name of the environment it's working on",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.1(2026-10-15)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.1::issue-3604-flyway-identifies-itself-to-snowflake-as-redgate-",
+      "version": "13.10.1",
+      "date": "2026-10-15",
+      "dateDisplay": "15 Oct 2026",
+      "category": "change",
+      "text": "Issue 3604 Flyway identifies itself to Snowflake as Redgate_Flyway unless the application parameter is set",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.1(2026-10-15)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.1::new-databricks-property-resolver-to-generate-a-token-cache-p",
+      "version": "13.10.1",
+      "date": "2026-10-15",
+      "dateDisplay": "15 Oct 2026",
+      "category": "feature",
+      "text": "New databricks property resolver to generate a token cache passphrase to support interactive sign-in",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.1(2026-10-15)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.10.1::warn-when-environment-names-differ-only-by-case",
+      "version": "13.10.1",
+      "date": "2026-10-15",
+      "dateDisplay": "15 Oct 2026",
+      "category": "change",
+      "text": "warn when environment names differ only by case",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.10.1(2026-10-15)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.10.0::checkdriftonmigrate-is-deprecated-and-now-logs-a-warning-whe",
       "version": "13.10.0",
