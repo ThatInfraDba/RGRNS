@@ -2,8 +2,26 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-10-15",
+  "generated": "2026-10-24",
   "versions": [
+    {
+      "version": "9.10.9",
+      "date": "2026-10-22",
+      "dateDisplay": "22 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.9-22October2026"
+    },
+    {
+      "version": "9.10.8",
+      "date": "2026-10-20",
+      "dateDisplay": "20 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.8-20October2026"
+    },
+    {
+      "version": "9.10.7",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.7-14October2026"
+    },
     {
       "version": "9.10.6",
       "date": "2026-10-14",
@@ -342,6 +360,46 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.10.8::development-and-target-connections-now-ask-for-ok-to-erase-a",
+      "version": "9.10.8",
+      "date": "2026-10-20",
+      "dateDisplay": "20 Oct 2026",
+      "category": "change",
+      "text": "Development and target connections now ask for ‘Ok to erase and rebuild’ when using a provisioner that erases the database (Backup, Snapshot or Create Database)",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.8-20October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.8::schema-model-history-preview-shows-recent-commits-across-the",
+      "version": "9.10.8",
+      "date": "2026-10-20",
+      "dateDisplay": "20 Oct 2026",
+      "category": "feature",
+      "text": "Schema model history (preview) shows recent commits across the whole schema model, and can be filtered down to individual objects",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.8-20October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.8::the-snowflake-connection-dialog-now-has-dedicated-fields-for",
+      "version": "9.10.8",
+      "date": "2026-10-20",
+      "dateDisplay": "20 Oct 2026",
+      "category": "improvement",
+      "text": "The Snowflake connection dialog now has dedicated fields for the server hostname, warehouse, database, role and authentication",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.8-20October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.10.7::object-level-history-is-now-out-of-preview-and-in-general-av",
+      "version": "9.10.7",
+      "date": "2026-10-14",
+      "dateDisplay": "14 Oct 2026",
+      "category": "change",
+      "text": "Object level history is now out of preview and in general availability",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.10.7-14October2026",
+      "status": "curated"
+    },
     {
       "id": "9.10.6::databricks-lakebase-connections-can-now-sign-in-to-databrick",
       "version": "9.10.6",
