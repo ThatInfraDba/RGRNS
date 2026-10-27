@@ -2,8 +2,20 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-10-16",
+  "generated": "2026-10-27",
   "versions": [
+    {
+      "version": "13.11.1",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.1(2026-10-21)"
+    },
+    {
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)"
+    },
     {
       "version": "13.10.2",
       "date": "2026-10-15",
@@ -384,6 +396,83 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.11.1::distrusted-ca-certificates-are-now-blocked-in-the-java-trust",
+      "version": "13.11.1",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "change",
+      "text": "Distrusted CA certificates are now blocked in the Java trust store of the bundled JREs and Docker images",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.1(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.11.0::info-now-honors-baselineonmigrate-so-migrations-at-or-below-",
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "change",
+      "text": "`info` now honors `baselineOnMigrate`, so migrations at or below `baselineVersion` show as `Below Baseline` or `Ignored`, instead of `Pending`",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.11.0::code-review-profiles-can-now-exclude-individual-regex-rules-",
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "feature",
+      "text": "Code review profiles can now exclude individual regex rules by rule code",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.11.0::code-review-reports-now-show-the-line-that-has-a-violation",
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "feature",
+      "text": "Code Review reports now show the line that has a violation",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.11.0::command-line-errors-now-suggest-running-with-x-for-debug-out",
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "change",
+      "text": "Command-line errors now suggest running with `-X` for debug output",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.11.0::docker-images-now-upgrade-ca-certificates-at-build-time",
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "change",
+      "text": "Docker images now upgrade ca-certificates at build time",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.11.0::the-docker-provisioner-now-builds-sql-server-and-postgresql-",
+      "version": "13.11.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "change",
+      "text": "The `docker` provisioner now builds SQL Server and PostgreSQL environments in a dedicated `flyway` database and Oracle environments in a dedicated `FLYWAY` schema, instead of `master`, `postgres` and `SYSTEM`",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.11.0(2026-10-21)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.10.1::flyway-now-prints-the-name-of-the-environment-it-s-working-o",
       "version": "13.10.1",
