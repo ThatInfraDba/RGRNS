@@ -908,9 +908,11 @@
       "category": "feature",
       "text": "The Cloud migration (preview) tab now recommends SQL Server on Amazon EC2 as well as Amazon RDS. Redgate Monitor collects EC2 instance prices from AWS to find the most suitable EC2 instance for the workload.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.37.0-October21,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "preview"
     },
     {
       "id": "14.36.0::baselines-are-now-shown-on-report-analysis-tiles",
