@@ -2,8 +2,20 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-10-15",
+  "generated": "2026-10-27",
   "versions": [
+    {
+      "version": "14.37.1",
+      "date": "2026-10-23",
+      "dateDisplay": "23 Oct 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.37.1-October23,2026"
+    },
+    {
+      "version": "14.37.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.37.0-October21,2026"
+    },
     {
       "version": "14.36.0",
       "date": "2026-10-14",
@@ -888,6 +900,20 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.37.0::the-cloud-migration-preview-tab-now-recommends-sql-server-on",
+      "version": "14.37.0",
+      "date": "2026-10-21",
+      "dateDisplay": "21 Oct 2026",
+      "category": "feature",
+      "text": "The Cloud migration (preview) tab now recommends SQL Server on Amazon EC2 as well as Amazon RDS. Redgate Monitor collects EC2 instance prices from AWS to find the most suitable EC2 instance for the workload.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.37.0-October21,2026",
+      "status": "curated",
+      "platforms": [
+        "sqlserver"
+      ],
+      "edition": "preview"
+    },
     {
       "id": "14.36.0::baselines-are-now-shown-on-report-analysis-tiles",
       "version": "14.36.0",
