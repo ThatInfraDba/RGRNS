@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-10-26",
+  "generated": "2026-10-31",
   "versions": [
+    {
+      "version": "9.11.0",
+      "date": "2026-10-29",
+      "dateDisplay": "29 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.0-29October2026"
+    },
     {
       "version": "9.10.10",
       "date": "2026-10-26",
@@ -366,6 +372,26 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.11.0::on-macos-the-local-network-permission-prompt-now-explains-th",
+      "version": "9.11.0",
+      "date": "2026-10-29",
+      "dateDisplay": "29 Oct 2026",
+      "category": "improvement",
+      "text": "On macOS, the Local Network permission prompt now explains that Flyway Desktop uses it to connect to databases and source control servers on your local network",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.0-29October2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.11.0::the-manual-deployment-page-can-now-check-the-target-database",
+      "version": "9.11.0",
+      "date": "2026-10-29",
+      "dateDisplay": "29 Oct 2026",
+      "category": "feature",
+      "text": "The manual deployment page can now check the target database for drift, and checks for it before deploying. Drifted objects can be reviewed, then incorporated into the project, filtered out, reverted or ignored",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.0-29October2026",
+      "status": "curated"
+    },
     {
       "id": "9.10.10::databricks-advanced-capabilities-support-is-now-generally-av",
       "version": "9.10.10",
