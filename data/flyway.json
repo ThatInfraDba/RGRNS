@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-10-27",
+  "generated": "2026-10-31",
   "versions": [
+    {
+      "version": "13.12.0",
+      "date": "2026-10-30",
+      "dateDisplay": "30 Oct 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.0(2026-10-30)"
+    },
     {
       "version": "13.11.1",
       "date": "2026-10-21",
@@ -396,6 +402,17 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.12.0::the-check-report-now-warns-when-objects-that-have-drifted-wi",
+      "version": "13.12.0",
+      "date": "2026-10-30",
+      "dateDisplay": "30 Oct 2026",
+      "category": "feature",
+      "text": "The check report now warns when objects that have drifted will also be changed by the deployment",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.0(2026-10-30)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.11.1::distrusted-ca-certificates-are-now-blocked-in-the-java-trust",
       "version": "13.11.1",
