@@ -920,8 +920,10 @@
       "category": "feature",
       "text": "Monitoring of backups for self-managed PostgreSQL instances that use pgBackRest is now supported. See Monitoring PostgreSQL backups.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
       "edition": ""
     },
     {
@@ -932,8 +934,10 @@
       "category": "feature",
       "text": "Monitoring of PostgreSQL instances running on Google Cloud AlloyDB for PostgreSQL is now supported.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
       "edition": ""
     },
     {
@@ -944,8 +948,10 @@
       "category": "feature",
       "text": "PowerShell alert settings cmdlets have a new optional -DatabaseEngine parameter. Without it, settings from Get or New keep their database engine, and other settings use SQL Server, so existing scripts are unaffected.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
       "edition": ""
     },
     {
@@ -956,8 +962,10 @@
       "category": "feature",
       "text": "The Backup overdue and Differential backup overdue alerts now also support self-managed PostgreSQL instances that use pgBackRest. See List of alerts.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
       "edition": ""
     },
     {
@@ -968,9 +976,11 @@
       "category": "feature",
       "text": "Enterprise edition - Monitoring of Microsoft Entra ID is now supported. See the documentation for more information.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.38.0-October28,2026",
-      "status": "needs-review",
-      "platforms": [],
-      "edition": ""
+      "status": "curated",
+      "platforms": [
+        "cloud"
+      ],
+      "edition": "enterprise"
     },
     {
       "id": "14.37.0::the-cloud-migration-preview-tab-now-recommends-sql-server-on",
