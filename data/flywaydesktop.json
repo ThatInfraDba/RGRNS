@@ -2,8 +2,20 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "versions": [
+    {
+      "version": "9.11.3",
+      "date": "2026-11-05",
+      "dateDisplay": "05 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.3-05November2026"
+    },
+    {
+      "version": "9.11.2",
+      "date": "2026-11-04",
+      "dateDisplay": "04 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.2-04November2026"
+    },
     {
       "version": "9.11.1",
       "date": "2026-11-03",
