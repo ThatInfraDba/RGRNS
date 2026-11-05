@@ -2,8 +2,20 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-10-27",
+  "generated": "2026-11-05",
   "versions": [
+    {
+      "version": "14.39.0",
+      "date": "2026-11-04",
+      "dateDisplay": "04 Nov 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026"
+    },
+    {
+      "version": "14.38.0",
+      "date": "2026-10-28",
+      "dateDisplay": "28 Oct 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.38.0-October28,2026"
+    },
     {
       "version": "14.37.1",
       "date": "2026-10-23",
@@ -900,6 +912,76 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.39.0::monitoring-of-backups-for-self-managed-postgresql-instances-",
+      "version": "14.39.0",
+      "date": "2026-11-04",
+      "dateDisplay": "04 Nov 2026",
+      "category": "feature",
+      "text": "Monitoring of backups for self-managed PostgreSQL instances that use pgBackRest is now supported. See Monitoring PostgreSQL backups.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.39.0::monitoring-of-postgresql-instances-running-on-google-cloud-a",
+      "version": "14.39.0",
+      "date": "2026-11-04",
+      "dateDisplay": "04 Nov 2026",
+      "category": "feature",
+      "text": "Monitoring of PostgreSQL instances running on Google Cloud AlloyDB for PostgreSQL is now supported.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.39.0::powershell-alert-settings-cmdlets-have-a-new-optional-databa",
+      "version": "14.39.0",
+      "date": "2026-11-04",
+      "dateDisplay": "04 Nov 2026",
+      "category": "feature",
+      "text": "PowerShell alert settings cmdlets have a new optional -DatabaseEngine parameter. Without it, settings from Get or New keep their database engine, and other settings use SQL Server, so existing scripts are unaffected.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
+      "status": "curated",
+      "platforms": [
+        "all_db"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.39.0::the-backup-overdue-and-differential-backup-overdue-alerts-no",
+      "version": "14.39.0",
+      "date": "2026-11-04",
+      "dateDisplay": "04 Nov 2026",
+      "category": "feature",
+      "text": "The Backup overdue and Differential backup overdue alerts now also support self-managed PostgreSQL instances that use pgBackRest. See List of alerts.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.39.0-November4,2026",
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
+      "edition": ""
+    },
+    {
+      "id": "14.38.0::enterprise-edition-monitoring-of-microsoft-entra-id-is-now-s",
+      "version": "14.38.0",
+      "date": "2026-10-28",
+      "dateDisplay": "28 Oct 2026",
+      "category": "feature",
+      "text": "Enterprise edition - Monitoring of Microsoft Entra ID is now supported. See the documentation for more information.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.38.0-October28,2026",
+      "status": "curated",
+      "platforms": [
+        "cloud"
+      ],
+      "edition": "enterprise"
+    },
     {
       "id": "14.37.0::the-cloud-migration-preview-tab-now-recommends-sql-server-on",
       "version": "14.37.0",
