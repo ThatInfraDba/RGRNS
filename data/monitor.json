@@ -2,8 +2,14 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-11-05",
+  "generated": "2026-11-13",
   "versions": [
+    {
+      "version": "14.40.0",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.40.0-November12,2026"
+    },
     {
       "version": "14.39.0",
       "date": "2026-11-04",
