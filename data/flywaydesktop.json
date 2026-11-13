@@ -2,8 +2,26 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-11-05",
+  "generated": "2026-11-13",
   "versions": [
+    {
+      "version": "9.11.6",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.6-12November2026"
+    },
+    {
+      "version": "9.11.5",
+      "date": "2026-11-10",
+      "dateDisplay": "10 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.5-10November2026"
+    },
+    {
+      "version": "9.11.4",
+      "date": "2026-11-09",
+      "dateDisplay": "09 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.4-09November2026"
+    },
     {
       "version": "9.11.3",
       "date": "2026-11-05",
@@ -390,6 +408,56 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.11.6::on-macos-when-test-connection-fails-with-no-route-to-host-fl",
+      "version": "9.11.6",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "category": "improvement",
+      "text": "On macOS, when ‘Test connection’ fails with ‘No route to host’, Flyway Desktop now suggests checking its Local Network permission in System Settings",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.6-12November2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.11.5::update-successful-on-the-update-development-page-is-now-a-to",
+      "version": "9.11.5",
+      "date": "2026-11-10",
+      "dateDisplay": "10 Nov 2026",
+      "category": "change",
+      "text": "‘Update successful’ on the update development page is now a toast; a verified baseline script, a clean drift check and resolved drift before a deployment now show as success cards; and the shadow database summary after a comparison is now an informational banner",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.5-10November2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.11.5::the-docker-provisioner-is-no-longer-labelled-as-being-in-pre",
+      "version": "9.11.5",
+      "date": "2026-11-10",
+      "dateDisplay": "10 Nov 2026",
+      "category": "change",
+      "text": "The Docker provisioner is no longer labelled as being in preview",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.5-10November2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.11.4::automated-deployment-no-longer-needs-a-git-repository-so-you",
+      "version": "9.11.4",
+      "date": "2026-11-09",
+      "dateDisplay": "09 Nov 2026",
+      "category": "improvement",
+      "text": "Automated deployment no longer needs a Git repository, so you can generate GitHub Actions workflows, Bash scripts and PowerShell scripts for any project",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.4-09November2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.11.4::when-you-create-a-branch-spaces-in-the-name-now-become-dashe",
+      "version": "9.11.4",
+      "date": "2026-11-09",
+      "dateDisplay": "09 Nov 2026",
+      "category": "improvement",
+      "text": "When you create a branch, spaces in the name now become dashes as you type or paste",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.4-09November2026",
+      "status": "curated"
+    },
     {
       "id": "9.11.1::leading-and-trailing-whitespace-are-now-trimmed-from-the-pro",
       "version": "9.11.1",
