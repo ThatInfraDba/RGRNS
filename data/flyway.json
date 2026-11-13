@@ -2,8 +2,14 @@
   "product": "flyway",
   "productName": "Redgate Flyway Engine",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine",
-  "generated": "2026-11-05",
+  "generated": "2026-11-13",
   "versions": [
+    {
+      "version": "13.12.2",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.2(2026-11-12)"
+    },
     {
       "version": "13.12.1",
       "date": "2026-11-05",
@@ -408,6 +414,61 @@
     }
   ],
   "entries": [
+    {
+      "id": "13.12.2::connection-failures-with-no-route-to-the-database-host-now-r",
+      "version": "13.12.2",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "category": "change",
+      "text": "Connection failures with no route to the database host now report the `NO_ROUTE_TO_HOST` sub error code in JSON output instead of `CONNECTION_FAILURE`",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.2(2026-11-12)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.12.2::flyway-now-supports-the-offlinepermit-parameter-for-supplyin",
+      "version": "13.12.2",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "category": "feature",
+      "text": "Flyway now supports the `offlinePermit` parameter for supplying an offline license permit directly, as an alternative to `offlinePermitPath`",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.2(2026-11-12)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.12.2::the-docker-provisioner-is-no-longer-in-preview",
+      "version": "13.12.2",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "category": "change",
+      "text": "The `docker` provisioner is no longer in preview",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.2(2026-11-12)",
+      "status": "curated",
+      "edition": ""
+    },
+    {
+      "id": "13.12.2::the-flyway-mcp-server-now-starts-without-a-license-load-proj",
+      "version": "13.12.2",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "category": "change",
+      "text": "The Flyway MCP server now starts without a license. `load_project`, `reload_project`, `review_code` and `test_migrate` work without one; the other tools still need Flyway Enterprise and return a licensing error explaining how to upgrade.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.2(2026-11-12)",
+      "status": "curated",
+      "edition": "enterprise"
+    },
+    {
+      "id": "13.12.2::when-flyway-is-licensed-through-online-authentication-or-a-p",
+      "version": "13.12.2",
+      "date": "2026-11-12",
+      "dateDisplay": "12 Nov 2026",
+      "category": "feature",
+      "text": "When Flyway is licensed through online authentication or a personal access token, the \"Licensed via\" message now shows when the license was last checked, including the time zone, for example \"Licensed via: Online Authentication (last checked 2026-10-09 08:14 BST)\". This makes it clear that a recently renewed license may take up to 24 hours to appear.",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine#ReleaseNotesforFlywayEngine-Flyway13.12.2(2026-11-12)",
+      "status": "curated",
+      "edition": ""
+    },
     {
       "id": "13.12.1::the-flyway-maven-and-gradle-plugins-can-now-load-toml-config",
       "version": "13.12.1",
