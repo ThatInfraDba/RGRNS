@@ -932,8 +932,10 @@
       "category": "feature",
       "text": "The get_top_waits MCP tool now supports PostgreSQL instances and Aurora clusters. It returns the wait event types and wait events that the PostgreSQL Waits page shows, for all databases on the instance.",
       "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.41.0-November19,2026",
-      "status": "needs-review",
-      "platforms": [],
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
       "edition": ""
     },
     {
