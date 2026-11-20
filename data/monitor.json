@@ -2,8 +2,14 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-11-13",
+  "generated": "2026-11-19",
   "versions": [
+    {
+      "version": "14.41.0",
+      "date": "2026-11-19",
+      "dateDisplay": "19 Nov 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.41.0-November19,2026"
+    },
     {
       "version": "14.40.0",
       "date": "2026-11-12",
@@ -918,6 +924,20 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.41.0::the-get-top-waits-mcp-tool-now-supports-postgresql-instances",
+      "version": "14.41.0",
+      "date": "2026-11-19",
+      "dateDisplay": "19 Nov 2026",
+      "category": "feature",
+      "text": "The get_top_waits MCP tool now supports PostgreSQL instances and Aurora clusters. It returns the wait event types and wait events that the PostgreSQL Waits page shows, for all databases on the instance.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.41.0-November19,2026",
+      "status": "curated",
+      "platforms": [
+        "postgresql"
+      ],
+      "edition": ""
+    },
     {
       "id": "14.39.0::monitoring-of-backups-for-self-managed-postgresql-instances-",
       "version": "14.39.0",
