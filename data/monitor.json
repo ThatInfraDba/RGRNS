@@ -2,8 +2,14 @@
   "product": "monitor",
   "productName": "Redgate Monitor",
   "source": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html",
-  "generated": "2026-11-19",
+  "generated": "2026-11-27",
   "versions": [
+    {
+      "version": "14.42.0",
+      "date": "2026-11-25",
+      "dateDisplay": "25 Nov 2026",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.42.0-November25,2026"
+    },
     {
       "version": "14.41.0",
       "date": "2026-11-19",
@@ -924,6 +930,30 @@
     }
   ],
   "entries": [
+    {
+      "id": "14.42.0::enterprise-edition-rest-api-v2-is-now-out-of-preview",
+      "version": "14.42.0",
+      "date": "2026-11-25",
+      "dateDisplay": "25 Nov 2026",
+      "category": "feature",
+      "text": "Enterprise edition - REST API v2 is now out of preview.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.42.0-November25,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
+    {
+      "id": "14.42.0::enterprise-edition-the-permissions-page-now-includes-azure-s",
+      "version": "14.42.0",
+      "date": "2026-11-25",
+      "dateDisplay": "25 Nov 2026",
+      "category": "feature",
+      "text": "Enterprise edition - The Permissions page now includes Azure SQL Database servers, databases and users.",
+      "link": "https://documentation.red-gate.com/monitor/redgate-monitor-14-1+-release-notes-317489801.html#RedgateMonitor14.1+ReleaseNotes-Version14.42.0-November25,2026",
+      "status": "needs-review",
+      "platforms": [],
+      "edition": ""
+    },
     {
       "id": "14.41.0::the-get-top-waits-mcp-tool-now-supports-postgresql-instances",
       "version": "14.41.0",
