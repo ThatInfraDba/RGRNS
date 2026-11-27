@@ -2,8 +2,14 @@
   "product": "flywaydesktop",
   "productName": "Redgate Flyway Desktop",
   "source": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes",
-  "generated": "2026-11-13",
+  "generated": "2026-11-27",
   "versions": [
+    {
+      "version": "9.11.7",
+      "date": "2026-11-24",
+      "dateDisplay": "24 Nov 2026",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.7-24November2026"
+    },
     {
       "version": "9.11.6",
       "date": "2026-11-12",
@@ -408,6 +414,26 @@
     }
   ],
   "entries": [
+    {
+      "id": "9.11.7::the-development-environment-s-schemas-are-now-saved-to-flywa",
+      "version": "9.11.7",
+      "date": "2026-11-24",
+      "dateDisplay": "24 Nov 2026",
+      "category": "change",
+      "text": "The development environment’s schemas are now saved to flyway.toml as schemaModelSchemas, so the Flyway CLI compares the schema model correctly against a target database when the schemas do not match",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.7-24November2026",
+      "status": "curated"
+    },
+    {
+      "id": "9.11.7::the-diagrams-on-the-choose-deployment-method-screen-now-use-",
+      "version": "9.11.7",
+      "date": "2026-11-24",
+      "dateDisplay": "24 Nov 2026",
+      "category": "improvement",
+      "text": "The diagrams on the ‘Choose deployment method’ screen now use real text, so screen readers can read them and they scale with text size",
+      "link": "https://documentation.red-gate.com/flyway/release-notes-and-older-versions/flyway-desktop-9-release-notes#FlywayDesktop9releasenotes-9.11.7-24November2026",
+      "status": "curated"
+    },
     {
       "id": "9.11.6::on-macos-when-test-connection-fails-with-no-route-to-host-fl",
       "version": "9.11.6",
